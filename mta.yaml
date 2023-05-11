@@ -1,0 +1,92 @@
+_schema-version: "3.2"
+ID: melodymta
+version: 0.0.1
+modules:
+- name: melodymta-destination-content
+  type: com.sap.application.content
+  requires:
+  - name: melodymta-destination-service
+    parameters:
+      content-target: true
+  - name: melodymta_html_repo_host
+    parameters:
+      service-key:
+        name: melodymta_html_repo_host-key
+  - name: uaa_melodymta
+    parameters:
+      service-key:
+        name: uaa_melodymta-key
+  parameters:
+    content:
+      instance:
+        destinations:
+        - Name: melomanapp_melodymta_html_repo_host
+          ServiceInstanceName: melodymta-html5-app-host-service
+          ServiceKeyName: melodymta_html_repo_host-key
+          sap.cloud.service: melomanapp
+        - Authentication: OAuth2UserTokenExchange
+          Name: melomanapp_uaa_melodymta
+          ServiceInstanceName: melodymta-xsuaa-service
+          ServiceKeyName: uaa_melodymta-key
+          sap.cloud.service: melomanapp
+        existing_destinations_policy: ignore
+  build-parameters:
+    no-source: true
+- name: melodymta-app-content
+  type: com.sap.application.content
+  path: .
+  requires:
+  - name: melodymta_html_repo_host
+    parameters:
+      content-target: true
+  build-parameters:
+    build-result: resources
+    requires:
+    - artifacts:
+      - comtestactivityreg.zip
+      name: comtestactivityreg
+      target-path: resources/
+- name: comtestactivityreg
+  type: html5
+  path: activityreg
+  build-parameters:
+    build-result: dist
+    builder: custom
+    commands:
+    - npm install
+    - npm run build:cf
+    supported-platforms: []
+resources:
+- name: melodymta-destination-service
+  type: org.cloudfoundry.managed-service
+  parameters:
+    config:
+      HTML5Runtime_enabled: true
+      init_data:
+        instance:
+          destinations:
+          - Authentication: NoAuthentication
+            Name: ui5
+            ProxyType: Internet
+            Type: HTTP
+            URL: https://ui5.sap.com
+          existing_destinations_policy: update
+      version: 1.0.0
+    service: destination
+    service-name: melodymta-destination-service
+    service-plan: lite
+- name: melodymta_html_repo_host
+  type: org.cloudfoundry.managed-service
+  parameters:
+    service: html5-apps-repo
+    service-name: melodymta-html5-app-host-service
+    service-plan: app-host
+- name: uaa_melodymta
+  type: org.cloudfoundry.managed-service
+  parameters:
+    path: ./xs-security.json
+    service: xsuaa
+    service-name: melodymta-xsuaa-service
+    service-plan: application
+parameters:
+  deploy_mode: html5-repo

@@ -1,0 +1,46 @@
+{
+  "root": true,
+  "plugins": [
+    "@sap/ui5-jsdocs",
+    "fiori-custom"
+  ],
+  "extends": [
+    "plugin:@sap/ui5-jsdocs/recommended",
+    "eslint:recommended"
+  ],
+  "overrides": [
+    {
+      "files": [
+        "**/*.*"
+      ],
+      "excludedFiles": [
+        "test/**",
+        "target/**",
+        "webapp/test/**",
+        "webapp/localservice/**",
+        "backup/**",
+        "Gruntfile.js",
+        "changes_preview.js",
+        "gulpfile.js"
+      ],
+      "plugins": [
+        "fiori-custom"
+      ],
+      "extends": [
+        "eslint:recommended",
+        "plugin:fiori-custom/fioriToolsDefault"
+      ]
+    },
+    {
+      "files": [
+        "webapp/test/**"
+      ],
+      "plugins": [
+        "fiori-custom"
+      ],
+      "extends": [
+        "plugin:fiori-custom/fioriToolsTestcode"
+      ]
+    }
+  ]
+}

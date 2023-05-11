@@ -1,0 +1,98 @@
+<core:FragmentDefinition xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns="sap.m"
+    xmlns:layout="sap.ui.layout"
+    xmlns:core="sap.ui.core" class="sapUiSizeCompact">
+    <!-- xmlns:custom="com.presalescentral.activityform.customControls" -->
+    <VBox>
+        <core:HTML id="DDErrorTxt" content='&lt;p class="demoEnvironmentsInfo" style=&quot;font-size:11px; color: #c14646;font-weight: bold&quot; &gt;{i18n>xtit.demoEnvironmentInfo} &lt;/p&gt;'></core:HTML>
+        <!--Rakesh-Updates to landscape selections in Demo reg. #289 start-->
+        <HBox class="labelPadding">
+            <Label text="{i18n>xtit.sapdemoeducloud}" tooltip="{i18n>xtit.sapdemoeducloud}" design="Bold"></Label>
+            <core:Icon src="sap-icon://search" press="addSapDemoEc" class="iconPadding" color="#03A9F4" visible="{= ${default>/Authorized} !=='' || ${appProperties>/DemoEditAccess} === 'X'}"></core:Icon>
+        </HBox>
+        <!-- <layout:Grid id="sapDemoEc" content="{path:'default>/to_ALand',filters:[{path:'Ltype', operator:'EQ',value1:'0'}]}" hSpacing="2" defaultSpan="L3 M6 S10" visible="{visibilityModel>/0/demoDetails}">
+            <layout:content>
+                <custom:Card class="card sapDemoCloudCard sapUiTinyMarginBottom" hideShowMoreButton="true" location="Location: {default>Location}" description="Type: {parts:[{path:'default>LTypeDescription'},{path:'default>Ltype'}],formatter:'.formatter.formatLTypeDescription'}" title="{default>LandDescription}" close="fnDeleteLandscape" productDesc="Product: {default>Product}" authorName="System ID: {default>LandscapeId}" showCloseButton="true">
+					<custom:customData>
+						<core:CustomData key="sapDemoEc" value="isSapDemoEcSelectAll"/>
+					</custom:customData>
+				</custom:Card>
+            </layout:content>
+        </layout:Grid> -->
+        <!-- <HBox class="labelPadding">
+            <Label text="{i18n>xtit.landscape}" tooltip="{i18n>xtit.landscape}" design="Bold"></Label>
+            <core:Icon src="sap-icon://search" press="addLandscapes" id="otherLandScapes" class="iconPadding" color="#03A9F4" visible="{= ${default>/Authorized} !=='' || ${appProperties>/DemoEditAccess} === 'X'}"></core:Icon>
+        </HBox>
+        <layout:Grid id="landscape" content="{path:'default>/to_ALand',filters:[{path:'Ltype', operator:'NE',value1:'0'}]}" hSpacing="2" defaultSpan="L3 M6 S10" visible="{visibilityModel>/0/demoDetails}">
+            <layout:content>
+                <custom:Card class="card sapDemoCloudCard sapUiTinyMarginBottom" hideShowMoreButton="true" location="Location: {default>Location}" description="Type: {parts:[{path:'default>LTypeDescription'},{path:'default>Ltype'}],formatter:'.formatter.formatLTypeDescription'}" title="{default>LandDescription}" close="fnDeleteLandscape" productDesc="Product: {default>Product}" authorName="System ID: {default>LandscapeId}" showCloseButton="true">
+                    <custom:customData>
+                        <core:CustomData key="landscape" value="isLandscapeSelectAll"/>
+                    </custom:customData>
+                </custom:Card>
+            </layout:content>
+        </layout:Grid> -->
+        <!-- successfactor -->
+        <HBox class="labelPadding">
+            <Label text="{i18n>xtit.successFactor}" tooltip="{i18n>xtit.successFactor}" design="Bold"></Label>
+            <core:Icon src="sap-icon://add" press="addSuccessFactor" class="iconPadding" color="#03A9F4" visible="{= ${default>/Authorized} !=='' ||${appProperties>/DemoEditAccess} === 'X'}"></core:Icon>
+        </HBox>
+        <HBox id="idDCRBtn" visible="false" items="{masterDataModel>/Yc_Mac_M_Datacenter}">
+            <items>
+                <CheckBox text="{masterDataModel>description}" select="addDc"/>
+            </items>
+        </HBox>
+        <Table inset="true" items="{path:'default>/to_ASuccessFactor', sorter: { path: 'DCId', descending: false, group : '.getDcgroup' },groupHeaderFactory: '.getGroupHeader'}" id="tblSuccessFactor" visible="false">
+            <columns>
+                <Column width="45%" demandPopin="true">
+                    <Text text="Company Name"></Text>
+                </Column>
+                <Column width="23%" demandPopin="true">
+                    <Text text="User"></Text>
+                </Column>
+                <Column width="23%" demandPopin="true">
+                    <Text text="Password"></Text>
+                </Column>
+                <Column hAlign="Center" vAlign="Middle" demandPopin="true">
+                    <Text text="Remove"></Text>
+                </Column>
+            </columns>
+            <items>
+                <ColumnListItem>
+                    <cells>
+                        <Input value="{default>CompName}" placeholder="{i18n>xtit.companyNamePlaceholderTxt}" valueState="{= ${visibilityModel>/0/valueState} === 'Error' &amp;&amp; ${default>CompName} === '' ?'Error':'None'}" change="handleSuccessFactorChange"></Input>
+                        <Input value="{default>Username}" placeholder="{i18n>xtit.userNamePlaceholderTxt}" valueState="{= ${visibilityModel>/0/valueState} === 'Error' &amp;&amp; ${default>Username} === '' ?'Error':'None'}" change="handleSuccessFactorChange"></Input>
+                        <Input value="{default>AccessKey}" placeholder="{i18n>xtit.passwordPlaceholderTxt}" valueState="{= ${visibilityModel>/0/valueState} === 'Error' &amp;&amp; ${default>AccessKey} === '' ?'Error':'None'}" change="handleSuccessFactorChange"></Input>
+                        <core:Icon src="sap-icon://delete" press="deleteSuccessFactor" color="red"></core:Icon>
+                    </cells>
+                </ColumnListItem>
+            </items>
+        </Table>
+        <HBox class="labelPadding">
+            <Label text="{i18n>xtit.cloudTenant}" tooltip="{i18n>xtit.cloudTenant}" design="Bold"></Label>
+            <core:Icon src="sap-icon://add" press="addCloudTenant" class="iconPadding" color="#03A9F4" visible="true"></core:Icon>
+        </HBox>
+        <Table items="{default>/to_ACloudEnv}" id="tblCloudTenant" visible="false">
+            <columns>
+                <Column width="46%" demandPopin="true">
+                    <Text text="Instance"></Text>
+                </Column>
+                <Column width="46%" demandPopin="true">
+                    <Text text="Description"></Text>
+                </Column>
+                <Column hAlign="Center" vAlign="Middle" demandPopin="true">
+                    <Text text="Remove"></Text>
+                </Column>
+            </columns>
+            <items>
+                <ColumnListItem>
+                    <cells>
+                        <Input value="{default>Instance}" placeholder="{i18n>xtit.instancePlaceholderTxt}" change="handleChange" maxLength="{path:'/#Yc_Mac_T_Cloud_EnvType/Instance/@maxLength',formatter:'.formatter.toInteger'}" enabled="{= ${default>/Authorized} !==''}"></Input>
+                        <TextArea value="{default>Description}" width="100%" placeholder="{i18n>xtit.cloudDescPlaceholderTxt}" maxLength="{path:'/#Yc_Mac_T_Cloud_EnvType/Description/@maxLength',formatter:'.formatter.toInteger'}" change="handleChange" enabled="{= ${default>/Authorized} !==''}"></TextArea>
+                        <core:Icon src="sap-icon://delete" press="deleteCloud" color="red" visible="{= ${default>/Authorized} !==''}"></core:Icon>
+                    </cells>
+                </ColumnListItem>
+            </items>
+        </Table>
+    </VBox>
+</core:FragmentDefinition>

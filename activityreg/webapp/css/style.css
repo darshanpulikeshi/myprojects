@@ -1,0 +1,809 @@
+/* Enter your custom styles here */
+
+.gridMargin > div {
+    margin: 0rem !important;
+  }
+  
+  .demoEnvironmentsInfo {
+    margin-bottom: 0rem;
+    margin-top: 0rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+  }
+  
+  .demoEnvironmentsValidationErr {
+    border: 1px red solid;
+  }
+  
+  /* CSS for user view fragment*/
+  
+  .employeeImageposition {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .employeeNameposition {
+    margin-top: 1rem;
+    color: #427cac;
+    font-size: 16px;
+  }
+  
+  .employeeDesigposition {
+    margin-top: 0.4rem;
+  }
+  
+  .detailsColor {
+    /*color: #427CAC;*/
+    text-decoration: underline;
+    min-height: 1rem !important;
+    line-height: 1rem !important;
+    /*margin-top: 0.1rem;*/
+    /* padding-top: 0.4125rem !important;
+                                                  padding-bottom: 0.4125rem!important;*/
+  }
+  
+  /*----------*/
+  
+  .formWidth {
+    width: 100%;
+  }
+  
+  .fontColor {
+    color: #0070b1;
+  }
+  
+  /*.demoEnvironment>h1.sapMPanelHdr {
+      font-size: 1rem;
+  }*/
+  
+  div.formWidth div.sapUiFormTitle {
+    height: 2rem;
+    border-bottom: 1px solid #cccccc;
+  }
+  
+  .fontSize {
+    font-size: 12px !important;
+  }
+  
+  .fontSize > span {
+    font-size: 12px !important;
+  }
+  
+  .checkboxSpacing > div {
+    width: 34% !important;
+  }
+  
+  .tokenWidth {
+    width: 100% !important;
+  }
+  
+  .tokenWidth > span.sapMTokenIcon {
+    float: right;
+  }
+  
+  .checkBoxPadding {
+    padding: 0px 0 0 2rem;
+  }
+  
+  .labelPadding {
+    padding-top: 1rem;
+  }
+  
+  .alignToRadioBtn {
+    padding-top: 0.5rem;
+  }
+  
+  div.switchAlignment > div:first-child {
+    width: 100%;
+  }
+  
+  label {
+    white-space: normal !important;
+  }
+  
+  .iconPadding {
+    padding-left: 0.5rem;
+  }
+  
+  .iconPadding:before {
+    float: left;
+  }
+  
+  .sapUiRespGrid.sapUiRespGridVSpace1 > div {
+    margin-bottom: 0rem;
+  }
+  
+  .labelFloatLeft {
+    text-align: left;
+  }
+  
+  .segBtn {
+    margin-top: 0.2rem;
+  }
+  
+  /*.segBtn>li:first-child>span {
+      color: rgba(187, 0, 0, 0.41);
+  }*/
+  
+  .segBtn > li:last-child .sapMSegBBtnInner {
+    width: 5rem !important;
+    margin-right: 1em;
+    border: 2px solid #198c19;
+    /*border-radius: 11px !important;*/
+    height: auto;
+    border-left: 2.5px solid #198c19 !important;
+    border-right: 2.5px solid #198c19 !important;
+  }
+  
+  .segBtn > li:nth-child(2n) .sapMSegBBtnInner {
+    width: 5rem !important;
+    margin-right: 1em;
+    border: 2px solid #ffdf00;
+    /*border-radius: 11px !important;*/
+    height: auto;
+    border-left: 2.5px solid #ffdf00 !important;
+    border-right: 2.5px solid #ffdf00 !important;
+  }
+  
+  .segBtn > li:first-child .sapMSegBBtnInner {
+    width: 5rem !important;
+    margin-right: 1em;
+    border: 2px solid #ff0000;
+    /*border-radius: 11px !important;*/
+    height: auto;
+    border-left: 2.5px solid #ff0000 !important;
+    border-right: 2.5px solid #ff0000 !important;
+  }
+  
+  .segBtn > li:first-child:hover .sapMSegBBtnInner {
+    border: 1.5px solid #ff0000;
+    background: #ff0000;
+    color: #ffffff !important;
+  }
+  
+  .segBtn > li:last-child:hover .sapMSegBBtnInner {
+    border: 1.5px solid #198c19;
+    background: #198c19;
+    color: #ffffff !important;
+  }
+  
+  .segBtn > li:nth-child(2):hover .sapMSegBBtnInner {
+    border: 1.5px solid #ffdf00;
+    background: #ffdf00;
+    color: #346187 !important;
+  }
+  
+  .actSolutionDialog {
+    min-width: 24rem !important;
+  }
+  
+  .segBtn .sapMSegBBtnSel:last-child .sapMSegBBtnInner {
+    background: #198c19 !important;
+    border: 1.5px solid #198c19 !important;
+    color: #ffffff !important;
+    /*height: 2rem !important;*/
+    outline: none !important;
+  }
+  
+  .segBtn .sapMSegBBtnSel:nth-child(2n) .sapMSegBBtnInner {
+    background: #ffdf00 !important;
+    border: 1.5px solid #ffdf00 !important;
+    color: #346187 !important;
+    /*height: 2rem !important;*/
+    outline: none !important;
+  }
+  
+  .segBtn .sapMSegBBtnSel:first-child .sapMSegBBtnInner {
+    background: #ff0000 !important;
+    border: 1.5px solid #ff0000 !important;
+    color: #ffffff !important;
+    /*height: 2rem !important;*/
+    outline: none !important;
+  }
+  
+  .borderBottom {
+    border-bottom: 0px !important;
+  }
+  
+  .iconAlign {
+    vertical-align: -webkit-baseline-middle;
+  }
+  
+  .objectBlocDescFont {
+    font-size: 14px;
+    color: #346187;
+  }
+  
+  .objectBlockTitleFont {
+    font-size: 16px;
+  }
+  
+  .sapUxAPObjectPageSectionTitleUppercase {
+    text-transform: capitalize;
+  }
+  
+  .HBoxborder {
+    border: 1px solid #60a5cd !important;
+    border-radius: 50%;
+  }
+  
+  .usefulLinksFont {
+    text-align: left;
+    font-size: 12px;
+    font-weight: 700;
+    color: #427cac;
+  }
+  
+  .sapMListUl .sapMLIB.sapMGHLI {
+    background: #c5c1c1 !important;
+    color: #427cac;
+  }
+  
+  .riskAssesText {
+    font-size: 10px;
+    color: #c14646;
+    font-weight: bold;
+  }
+  
+  .actsetWarning {
+    font-size: 12px;
+    color: #c14646;
+    font-weight: bold;
+  }
+  
+  .sapMNLI-TextWrapper {
+    max-height: 6rem;
+  }
+  
+  .card div.sapMNLB-Header {
+    background-color: rgba(205, 218, 228, 1);
+    padding: 0.2rem 0.5rem 0 0.5rem;
+    height: 1.5rem !important;
+  }
+  
+  .card div.sapMNLB-Header > button {
+    top: 1rem !important;
+  }
+  
+  .card div.sapMNLB-Header > span > span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    display: inline-block;
+  }
+  
+  .card div.sapMNLB-Header > span {
+    width: 90%;
+  }
+  
+  .align_Label {
+    vertical-align: -webkit-baseline-middle;
+    padding-right: 0.2rem;
+  }
+  
+  .card div.sapMNLB-Header span.sapMTextMaxLine {
+    color: #666666;
+    font-weight: 700;
+    font-family: "Arial Bold", "Arial";
+    font-size: 11px;
+  }
+  
+  .card div.sapMNLI-Body div.sapMNLI-Description {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    font-family: "Arial";
+  }
+  
+  .card.sapMLIB.sapMNLI {
+    align-items: normal;
+    height: 9rem;
+  }
+  
+  .popupFilterLayout {
+    padding: 0rem 0.25rem 0rem 0.25rem;
+  }
+  
+  .alignActSetIcon {
+    margin-left: 0.5rem;
+    margin-top: 3px;
+    color: #4482b5 !important;
+  }
+  
+  .alignTeamDeleteIcon {
+    margin-left: 0.2rem;
+    margin-top: 35%;
+  }
+  
+  h5[data-cxrfp],
+  h5[data-ea] {
+    display: none;
+  }
+  
+  .commentHeaderTitle {
+    font-size: 1rem;
+  }
+  
+  .commentInfo {
+    font-size: x-small;
+    color: red !important;
+  }
+  
+  .groupHeaderBlackColor {
+    color: #000 !important;
+  }
+  
+  .info {
+    margin-top: 4px;
+  }
+  
+  .greenRiskLabel {
+    color: #198c19;
+  }
+  
+  .yellowRiskLabel {
+    color: #ffdf00;
+  }
+  
+  .redRiskLabel {
+    color: #ff0000;
+  }
+  
+  /*content recommondations*/
+  
+  .size3 {
+    margin-left: 60rem;
+  }
+  
+  .banner {
+    position: absolute;
+    z-index: 1;
+    width: 81px;
+    height: 78px;
+  }
+  
+  .image {
+    width: 8rem;
+    height: 6rem;
+    box-shadow: 0px 0px 6px 0px rgba(50, 50, 50, 0.2);
+  }
+  
+  /*.vb {*/
+  
+  /*    margin-left: 12px;*/
+  
+  /*}*/
+  
+  /*.tv {*/
+  
+  /*    margin-top: 6px;*/
+  
+  /*    margin-left: 4px;*/
+  
+  /*}*/
+  
+  /*.favcon {*/
+  
+  /*    margin-left: 95%;*/
+  
+  /*}*/
+  
+  .spaceAfterRating {
+    margin-left: 7px;
+    font-size: 12px;
+  }
+  
+  /*.imagevbox {*/
+  
+  /*    margin-left: -3px;*/
+  
+  /*    margin-top: 7px;*/
+  
+  /*}*/
+  
+  .sapMTB-Info-CTX.sapMTB {
+    height: 4rem;
+    padding: 0 0.5rem;
+    border-bottom: none;
+    background: #106f94;
+    color: #106f94;
+  }
+  
+  .additionalSol {
+    margin-left: -200px !important;
+    margin-top: 23px !important;
+  }
+  
+  .mainSol {
+    margin-top: -17px !important;
+  }
+  
+  .ScenarioList > div:last-child .sapMGrowingListDescription {
+    font-size: 1rem;
+  }
+  
+  .sapUiSizeCompact.myCustomSize {
+    margin-left: 0px;
+    margin-top: 25px;
+  }
+  
+  .sapUiSizeCompact.myCustomSizeRec {
+    margin-left: 0px;
+    margin-top: -7px;
+  }
+  
+  .sapUiHLayout.sapUiContentPadding {
+    padding: 0rem;
+  }
+  
+  .descriptionPadding {
+    padding: 0.5rem;
+  }
+  
+  .scenarioTitle {
+    font-weight: bold;
+    font-size: 13px;
+  }
+  
+  .textSize.sapMText {
+    font-size: 12px;
+  }
+  
+  .oppInfoIconCva {
+    margin-top: 19px;
+  }
+  
+  .actvtIdLink {
+    margin-left: 9rem;
+    margin-top: 8px;
+  }
+  
+  .alignCenter {
+    text-align: center !important;
+  }
+  
+  .sapSelectUserITB .sapMITBContent {
+    border-bottom: 0rem solid #d1e0ee;
+    padding: 0rem;
+    position: relative;
+    background-color: #fff;
+  }
+  
+  .sapActivityRegVbox {
+    margin-top: -14px;
+  }
+  
+  .sapSimplFormFldInvisbleClass .sapUiRespGridSpanInvisible,
+  .sapSimplFormFldInvisbleClass .sapUiRespGridSpanInvisible + div {
+    display: none;
+  }
+  
+  .HBoxborder {
+    border: 1px solid #60a5cd !important;
+    border-radius: 50%;
+  }
+  
+  .userInfoBox {
+    margin-left: 0.6rem;
+    width: 100%;
+  }
+  
+  .panelTitle {
+    font-size: 0.9rem !important;
+    color: #60a5cd !important;
+    margin-top: 0rem;
+  }
+  
+  .align_icons_at_bottom {
+    position: absolute;
+    bottom: 0rem;
+    right: 0rem;
+  }
+  
+  .avatarsize {
+    width: 1.5rem !important;
+    height: 1.5rem !important;
+    font-size: 0.8rem !important;
+    margin-right: 0.2rem;
+    background-color: #37393a78 !important;
+  }
+  
+  .avatarsize > span {
+    cursor: pointer !important;
+  }
+  
+  .sapMDetailPgTextFont .sapUiForm .sapUiFormTitle {
+    color: #666;
+    font-size: 0.95rem;
+    font-weight: bold !important;
+    font-family: "72fallback", "72", "72full", Arial, Helvetica, sans-serif;
+  }
+  
+  .sapMDetailPgTextFont .sapMPanelHdr {
+    color: #666;
+    font-size: 0.95rem;
+    font-weight: bold !important;
+    font-family: "72fallback", "72", "72full", Arial, Helvetica, sans-serif;
+  }
+  
+  .sapMTextDetailPageClass {
+    color: black;
+  }
+  
+  .sapMTextDetailPageClass .sapMColumnHeader > .sapMLabel,
+  .sapMColumnHeader > .sapMText,
+  .sapMListTblCell > .sapMSlt > .sapMSltLabel,
+  .sapMListTblCell > .sapMObjectNumber,
+  .sapMListTblCell > .sapMLabel,
+  .sapMListTblCell > .sapMText {
+    text-align: inherit !important;
+    color: black;
+  }
+  
+  .sapMTextDetailPageClass .sapMNLITitleText {
+    color: black;
+  }
+  
+  .canceledIconPadding {
+    padding-right: 1rem;
+  }
+  
+  .fontStyle {
+    font-size: medium;
+    color: red;
+    padding-right: 0.3rem;
+  }
+  
+  .sapMDetailAttachments {
+    margin-left: 13%;
+  }
+  
+  .sapMDetailAttachPanelBorder .sapMPanel > .sapMPanelHdr,
+  .sapMPanelWrappingDiv,
+  .sapMPanelWrappingDivTb {
+    border-bottom: 0px solid #ccc;
+  }
+  
+  .sapRiskIconMarginCls {
+    margin-top: 8px;
+  }
+  
+  .transparentBtn:hover > .sapMBtnHoverable {
+    background-color: transparent !important;
+    border-color: transparent !important;
+  }
+  
+  .transparentBtn:focus > .sapMFocusable {
+    outline: none !important;
+  }
+  
+  .sapMDetailPanelBorderClass {
+    border-bottom: 0px !important;
+  }
+  
+  /*.sapMDetailRiskIconColor .sapUiIcon::before {
+      color: #FFDF00 !important;
+  }*/
+  .SolText {
+    color: white !important;
+  }
+  
+  /*user settings css*/
+  .side-navigation-demo {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    max-width: 15rem;
+  }
+  
+  .settingsDialog {
+    width: 80%;
+    height: 500px;
+  }
+  
+  .settingsDialog .sapMDialogScroll,
+  .settingsDialog .settingsContainer,
+  .sideNavigation {
+    height: 100%;
+  }
+  
+  .settingsDialog .sapMNavItem,
+  .settingsDialog .sapMNavItem.sapMPage {
+    position: relative;
+  }
+  
+  .settingsDialog .settingsContainer .sapMFlexItem + .sapMFlexItem {
+    width: 100% !important;
+  }
+  
+  .settingsDialog .sapUiRespGridSpanInvisible {
+    display: none;
+  }
+  
+  .settingsDialog .sapMLIBShowSeparator > td {
+    vertical-align: middle !important;
+  }
+  
+  .sapUiMedia-Std-Phone .sapContrast .settingsDialog .sapTntSideNavigation,
+  .sapUiMedia-Std-Phone .settingsDialog .sapContrast.sapTntSideNavigation,
+  .sapUiMedia-Std-Tablet .sapContrast .settingsDialog .sapTntSideNavigation,
+  .sapUiMedia-Std-Tablet .settingsDialog .sapContrast.sapTntSideNavigation {
+    position: fixed;
+    top: 3rem;
+    z-index: 1;
+  }
+  
+  .sapUiMedia-Std-Phone
+    .settingsDialog
+    .sapTntSideNavigation.sapTntSideNavigationNotExpandedWidth,
+  .sapUiMedia-Std-Tablet
+    .settingsDialog
+    .sapTntSideNavigation.sapTntSideNavigationNotExpandedWidth {
+    width: 0;
+  }
+  
+  .settingsDialog
+    .sapTntInfoLabel.sapTntInfoLabelDisplayOnly
+    .sapTntInfoLabelInner {
+    font-size: 0.6rem;
+  }
+  
+  .settingsDialog .sapTntNavLI ul {
+    -webkit-transition: display 2s;
+    transition: display 2s;
+  }
+  
+  .settingsDialog .sapContrast .sapTntNavLIItem > .sapUiIcon,
+  .settingsDialog .sapContrast.sapTntNavLIItem > .sapUiIcon {
+    color: #878787;
+    font-size: 1.375rem;
+  }
+  
+  .settingsDialog .sapContrast .sapTntNavLIItem > .sapMText,
+  .settingsDialog .sapContrast.sapTntNavLIItem > .sapMText {
+    color: #333;
+  }
+  
+  .settingsDialog
+    .sapContrast
+    .sapTntNavLIItem.sapTntNavLIItemDisabled
+    > .sapMText,
+  .settingsDialog
+    .sapContrast
+    .sapTntNavLIItem.sapTntNavLIItemDisabled
+    > .sapUiIcon,
+  .settingsDialog
+    .sapContrast.sapTntNavLIItem.sapTntNavLIItemDisabled
+    > .sapMText,
+  .settingsDialog
+    .sapContrast.sapTntNavLIItem.sapTntNavLIItemDisabled
+    > .sapUiIcon {
+    color: #b3b3b3;
+  }
+  
+  .settingsDialog .sapMBar .sapMBtnIcon {
+    color: #878787;
+  }
+  
+  .settingsDialog .sapContrast .sapTntNavLIItemSelected .sapTntNavLIGroup,
+  .settingsDialog .sapContrast.sapTntNavLIItemSelected .sapTntNavLIGroup {
+    background-color: #e8eff6;
+  }
+  
+  .sapUiSizeCompact.settingsDialog .sapTntNavLIItem,
+  .settingsDialog .sapTntNavLIItem {
+    height: 4rem;
+  }
+  
+  html.sap-desktop .settingsDialog ::-webkit-scrollbar {
+    background-color: #fff;
+  }
+  
+  html.sap-desktop .settingsDialog .sapContrast ::-webkit-scrollbar-thumb {
+    background-color: #b2b2b2;
+  }
+  
+  .settingsDialog .settingsContainer .sapMTitleStyleAuto {
+    font-size: 1.1rem;
+  }
+  
+  .settingsDialog
+    .sapContrast
+    .sapTntNavLI
+    .sapTntNavLIGroup.sapTntNavLIItem
+    > .sapUiIcon:last-child {
+    font-size: 0.875rem;
+  }
+  
+  .sapUiSizeCompact.settingsDialog .settingsContainer .sapMBarPH,
+  .settingsDialog .settingsContainer .sapMBarPH {
+    width: 100%;
+    text-align: left;
+    padding-left: 1rem;
+  }
+  
+  .navContainerControl {
+    width: 100%;
+  }
+  
+  .sapSwtCustomCls {
+    margin-top: -0.8%;
+  }
+  
+  .sapMActRegNoteDescFont {
+    font-style: italic;
+  }
+  
+  .sapMActRegNoteDescMargin {
+    margin-left: 1.5rem !important;
+  }
+  
+  .ActDetSolutionsToolbar {
+    height: 2.5rem !important;
+    border-bottom: solid 0rem #d9d9d9 !important;
+  }
+  
+  .card .sapMNLIFooterItem {
+    color: #333 !important;
+  }
+  
+  .sapDemoCloudCard.sapMLIB.sapMNLI {
+    height: 10rem;
+  }
+  
+  .sapDemoCloudCard.sapMNLI .sapMNLIFooter .sapMNLIFooterItem:first-child {
+    white-space: break-spaces;
+  }
+  
+  .sapUiCancelPopupStyle .sapMPopoverHeader {
+    width: 16rem;
+  }
+  
+  .sapUiCancelPopupStyle .sapMFlexItem {
+    width: 15rem;
+  }
+  
+  .sapDemoEcDialogLink {
+    pointer-events: none;
+    cursor: default;
+  }
+  
+  .sapDemoEcDialogTable .sapUiTableTreeIcon.sapUiTableTreeIconLeaf {
+    visibility: hidden;
+    margin-left: -12px !important;
+  }
+  
+  .sapDemoEcDialogCheckBox .sapMLabel {
+    color: #0070b1 !important;
+    font-weight: bold;
+  }
+  
+  .sapMTempBusyDialog .sapUiLocalBusyIndicator > div::after {
+    margin-left: -1.875rem !important;
+    content: "Loading ..." !important;
+    font-weight: 400;
+  }
+  
+  .helpTextStyling {
+    font-size: 0.82rem !important;
+    padding-right: 0.3rem !important;
+    font-style: italic !important;
+  }
+  
+  .riskHelpText {
+    margin-top: -0.5rem !important;
+    color: #666 !important;
+  }
+  
+  .riskHelpTextSecond {
+    margin-top: 0.03rem !important;
+  }
+  
