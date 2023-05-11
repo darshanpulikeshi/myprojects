@@ -7,6 +7,7 @@ sap.ui.define(
   
       return BaseController.extend("com.test.activityreg.controller.App", {
         onInit() {
+          // dev branch
         }
       });
     }
