@@ -24,6 +24,23 @@
           "localUri": "localService/metadata.xml",
           "odataVersion": "2.0"
         }
+      },
+      "localJson": {
+        "uri": "./model/Property.json",
+        "type": "JSON"
+      }
+    },
+    "crossNavigation": {
+      "inbounds": {
+        "melodymta": {
+          "signature": {
+            "parameters": {},
+            "additionalParameters": "allowed"
+          },
+          "semanticObject": "melodymta",
+          "action": "display",
+          "title": "Melody Activity Form"
+        }
       }
     }
   },
@@ -73,6 +90,10 @@
         "dataSource": "mainService",
         "preload": true,
         "settings": {}
+      },
+      "mCommon": {
+        "type": "sap.ui.model.json.JSONModel",
+        "dataSource": "localJson"
       }
     },
     "resources": {
@@ -94,9 +115,24 @@
       },
       "routes": [
         {
-          "name": "RouteActivityRegistration",
-          "pattern": ":?query:",
+          "name": "ActivityRegistration",
+          "pattern": "",
           "target": ["TargetActivityRegistration"]
+        },
+        {
+          "name": "AcadaemyRequest",
+          "pattern": "AcadaemyRequest",
+          "target": ["TargetAcadaemyRequest"]
+        },
+        {
+          "name": "CXRFP",
+          "pattern": "CXRFP",
+          "target": ["TargetCXRFP"]
+        },
+        {
+          "name": "CXDesign",
+          "pattern": "CXDesign",
+          "target": ["TargetCXDesign"]
         }
       ],
       "targets": {
@@ -106,6 +142,27 @@
           "clearControlAggregation": false,
           "viewId": "ActivityRegistration",
           "viewName": "ActivityRegistration"
+        },
+        "TargetAcadaemyRequest": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "AcadaemyRequest",
+          "viewName": "AcadaemyRequest"
+        },
+        "TargetCXRFP": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "CXRFP",
+          "viewName": "CXRFP"
+        },
+        "TargetCXDesign": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "CXDesign",
+          "viewName": "CXDesign"
         }
       }
     },
@@ -119,5 +176,8 @@
   "sap.cloud": {
     "public": true,
     "service": "melomanapp"
+  },
+  "sap.platform.cf": {
+    "oAuthScopes": ["$XSAPPNAME.approver"]
   }
 }

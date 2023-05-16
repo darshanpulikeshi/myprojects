@@ -1,0 +1,54 @@
+<mvc:View controllerName="com.test.activityreg.controller.AcadaemyRequest"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns:form="sap.ui.layout.form"
+    xmlns:core="sap.ui.core"
+    xmlns="sap.m">
+    <Page id="acadaemyRequestPage" title="Acadaemy Request" class="sapMBackground">
+        <headerContent>
+            <ComboBox selectedKey="{mCommon>/navigationSelectedKey}" items="{
+					path: 'mCommon>/aNavigation',
+					sorter: { path: 'name' }
+				}" change="onNavigationChangeHandler">
+                <core:Item key="{mCommon>key}" text="{mCommon>name}" />
+            </ComboBox>
+        </headerContent>
+        <content>
+            <form:SimpleForm editable="true" layout="ResponsiveGridLayout" labelSpanXL="4" labelSpanL="4" labelSpanM="2" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="0" emptySpanL="0" emptySpanM="0" emptySpanS="0" columnsXL="3" columnsL="2" columnsM="1" singleContainerFullSize="false" class="sapSimplFormFldInvisbleClass sapMDetailPgTextFont sapMBackground" id="idActivityInfoTeam">
+                <form:content>
+                    <core:Title id="idTitle" text="Activity Form" tooltip="Activity Form"/>
+                    <core:Fragment fragmentName="com.test.activityreg.fragments.AcadaemyRequest.ActivityInformation" type="XML"/>
+                    <core:Title id="idActivityTeamTitle" text="Activity Team" tooltip="Activity Team"/>
+                    <core:Fragment fragmentName="com.test.activityreg.fragments.AcadaemyRequest.ActivityTeam" type="XML"/>
+                </form:content>
+            </form:SimpleForm>
+            <form:SimpleForm id="idFormActivityDetail" class="sapMBackground" editable="true" layout="ResponsiveGridLayout" labelSpanXL="4" labelSpanL="4" labelSpanM="12" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="0" emptySpanL="0" emptySpanM="0" emptySpanS="0" columnsXL="3" columnsL="2" columnsM="2" singleContainerFullSize="false" maxContainerCols="2">
+                <form:content>
+                    <core:Title text="Activity Details" tooltip="{i18n>xtit.actDetailsTitle}" id="idActDetailTitle">
+                        <core:customData>
+                            <core:CustomData key="{parts:[{path:'default>/ActivityTypeId'},{path:'i18n>xtit.actDetailsTitle'}],formatter:'.formatter.assignCustomData'}" value="test" writeToDom="true"/>
+                        </core:customData>
+                    </core:Title>
+                    <core:Fragment fragmentName="com.test.activityreg.fragments.AcadaemyRequest.ActivityDetails" type="XML"/>
+                    <core:Title id="idTitleEmpty"></core:Title>
+                </form:content>
+            </form:SimpleForm>
+        </content>
+        <footer>
+            <Toolbar id="idToolbarFooter">
+                <Button id="idButtonMakeServiceCall" text="Make Service Call" press="onServiceCall"></Button>
+                <Button type="Emphasized" text="{= ${validationModel>/data}.length}" icon="sap-icon://message-popup" visible="false" id="infoBtn" press="fnValidationMsgListOpen"/>
+                <!-- <Button text="{}" icon="sap-icon://overflow" press="fnOpenFooterActItems" visible="{= ${masterDataModel>/isEditFooterActBtnVisible} === true &amp;&amp; (${appProperties>/isLead} || ${default>/IsSlLead} === 'X') &amp;&amp; ${masterDataModel>/FormLayoutID} !== '00012' &amp;&amp; ${masterDataModel>/FormLayoutID} !== '00015'}"/> -->
+                <!-- <Button text="{= ${masterDataModel>/isServiceRequest} ? ${i18n>xbut.cancelReqBtn} : ${i18n>xbut.cancelActBtn}}" type="Reject" press="handleActCancel" enabled="{= ${default>/Authorized} !==''}" visible="{= ${appProperties>/isEditMode} &amp;&amp; ${appProperties>/isLead} &amp;&amp; ${default>/Status} !== '02' &amp;&amp; ${default>/Status} !== '12' &amp;&amp; ${default>/Status} !== '14' &amp;&amp; ${default>/Archived} === false &amp;&amp; ${appProperties>/isExpired} === false &amp;&amp; ${masterDataModel>/createMode} !== 'DETAIL_ACTIVITY'}"></Button> -->
+                <!--Activity Status Normilization (#214)-->
+                <!-- <Button text="{i18n>xbut.postDemoSurvey}" type="Accept" press="onPostDemoSurveyPress" id="postDemoSurveyBtn" visible="{= ${appProperties>/isEditMode} &amp;&amp; (${default>/ActivityTypeId} === '0001' || ${default>/ActivityTypeId} === '0107') &amp;&amp; ${appProperties>/isLead} &amp;&amp; (${default>/Status} === '12' || ${default>/Status} === '14') &amp;&amp; ${masterDataModel>/createMode} !== 'DETAIL_ACTIVITY' &amp;&amp; ${masterDataModel>/createMode} !== 'NEW_ACTIVITY'}"></Button>
+                <Button text="{i18n>xbut.createDBR}" press="handleCreateDBR" type="Emphasized" visible="{= ${appProperties>/isEditMode} &amp;&amp; ${default>/Status} !== '02' &amp;&amp; ${default>/Status} !== '12' &amp;&amp; ${default>/Status} !== '14' &amp;&amp; (${default>/ActivityTypeId} === '0001' || ${default>/ActivityTypeId} === '0015' || ${default>/ActivityTypeId} === '0107') &amp;&amp; ${appProperties>/isExpired} === false &amp;&amp; ${masterDataModel>/createMode} !== 'DETAIL_ACTIVITY'}"></Button>
+                <Button text="{i18n>xbut.reopenActBtn}" type="Emphasized" press="onReopenActivity" visible="{= ${default>/Status} === '02' &amp;&amp; (${appProperties>/isLead} || (${user>/CXRFP_User} ==='X' &amp;&amp; ${masterDataModel>/FormLayoutID} === '00012'))}"></Button> -->
+                <Button id="idButtonCreateTicket" type="Accept" text="{i18n>xbut.createTicket}" press="handleCreateTicket" visible="true"></Button>
+                <!-- <Button type="Accept" text="{= ${masterDataModel>/isServiceRequest} ? ${i18n>xbut.copyReqBtn} : ${i18n>xbut.copyActBtn}}" press="handleCopyActivity" visible="{parts:['appProperties>/isEditMode', 'masterDataModel>/SLActGUID', 'default>/SLActGUID', 'masterDataModel>/createMode'],formatter:'.formatter.setCopyActivityBtnVisible'}"></Button> -->
+                <ToolbarSpacer id="idToolbarSpacerFooter"></ToolbarSpacer>
+                <Button text="{i18n>xbut.saveBtn}" enabled="{= ${default>/Authorized} !=='' || (${user>/CXRFP_User} ==='X' &amp;&amp; ${masterDataModel>/FormLayoutID} === '00012') || ((${masterDataModel>/FormLayoutID} === '00014' || ${masterDataModel>/FormLayoutID} === '00015' || ${masterDataModel>/FormLayoutID} === '00016') &amp;&amp; ${appProperties>/authFlag} === 'X')|| (${masterDataModel>/FormLayoutID} === '00001' &amp;&amp; ${appProperties>/DemoEditAccess} === 'X')}" id="submit" type="Emphasized" tooltip="{i18n>xbut.saveBtn}" press="onSaveConfirmation" visible="{= ${default>/Status} !== '02' &amp;&amp; ${default>/Archived} === false &amp;&amp; ${masterDataModel>/createMode} !== 'DETAIL_ACTIVITY'}"></Button>
+                <Button id="idButtonCancel" text="{i18n>xbut.cancelBtn}" type="Reject" press="onCancel" visible="{= ${default>/Status} !== '02' &amp;&amp; ${default>/Archived} === false &amp;&amp; ${masterDataModel>/createMode} !== 'DETAIL_ACTIVITY'}"></Button>
+            </Toolbar>
+        </footer>
+    </Page>
+</mvc:View>

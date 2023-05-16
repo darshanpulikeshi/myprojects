@@ -1,0 +1,21 @@
+{
+  "aNavigation": [
+    {
+      "name": "Activity Registration",
+      "key": "ActivityRegistration"
+    },
+    {
+      "name": "Acadaemy Request",
+      "key": "AcadaemyRequest"
+    },
+    {
+      "name": "CXRFP",
+      "key": "CXRFP"
+    },
+    {
+      "name": "CX Design Request",
+      "key": "CXDesign"
+    }
+  ],
+  "navigationSelectedKey": "ActivityRegistration"
+}

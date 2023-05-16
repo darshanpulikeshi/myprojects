@@ -1,9 +1,9 @@
-<mvc:View controllerName="com.test.activityreg.controller.ActivityRegistration"
+<mvc:View controllerName="com.test.activityreg.controller.CXDesign"
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
     xmlns:form="sap.ui.layout.form"
     xmlns:core="sap.ui.core"
     xmlns="sap.m">
-    <Page id="page" title="{i18n>title}">
+    <Page id="cxDesignPage" title="CX Design Request">
         <headerContent>
             <ComboBox selectedKey="{mCommon>/navigationSelectedKey}" items="{
 					path: 'mCommon>/aNavigation',
@@ -16,19 +16,19 @@
             <form:SimpleForm editable="true" layout="ResponsiveGridLayout" labelSpanXL="4" labelSpanL="4" labelSpanM="2" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="0" emptySpanL="0" emptySpanM="0" emptySpanS="0" columnsXL="3" columnsL="2" columnsM="1" singleContainerFullSize="false" class="sapSimplFormFldInvisbleClass sapMDetailPgTextFont" id="idActivityInfoTeam">
                 <form:content>
                     <core:Title id="idTitle" text="Activity Form" tooltip="Activity Form"/>
-                    <core:Fragment fragmentName="com.test.activityreg.fragments.ActivityRegistration.ActivityInformation" type="XML"/>
+                    <core:Fragment fragmentName="com.test.activityreg.fragments.CXDesign.ActivityInformation" type="XML"/>
                     <core:Title id="idActivityTeamTitle" text="Activity Team" tooltip="Activity Team"/>
-                    <core:Fragment fragmentName="com.test.activityreg.fragments.ActivityRegistration.ActivityTeam" type="XML"/>
+                    <core:Fragment fragmentName="com.test.activityreg.fragments.CXDesign.ActivityTeam" type="XML"/>
                 </form:content>
             </form:SimpleForm>
-            <form:SimpleForm id="idFormActivityDetail" editable="true" layout="ResponsiveGridLayout" labelSpanXL="4" labelSpanL="4" labelSpanM="12" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="0" emptySpanL="0" emptySpanM="0" emptySpanS="0" columnsXL="3" columnsL="2" columnsM="2" singleContainerFullSize="false" maxContainerCols="2">
+            <form:SimpleForm id="idFormActivityDetail" visible="false" editable="true" layout="ResponsiveGridLayout" labelSpanXL="4" labelSpanL="4" labelSpanM="12" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="0" emptySpanL="0" emptySpanM="0" emptySpanS="0" columnsXL="3" columnsL="2" columnsM="2" singleContainerFullSize="false" maxContainerCols="2">
                 <form:content>
                     <core:Title text="{= (${default>/ActivityTypeId} !== '0124' &amp;&amp; ${default>/ActivityTypeId} !== '0014' &amp;&amp; ${default>/ActivityTypeId} !== '0016')||((${default>/ActivityTypeId} === '0014' || ${default>/ActivityTypeId} === '0016') &amp;&amp; ${appProperties>/authFlag} === 'X') ? ${i18n>xtit.actDetailsTitle} : ''}" tooltip="{i18n>xtit.actDetailsTitle}" id="idActDetailTitle">
                         <core:customData>
                             <core:CustomData key="{parts:[{path:'default>/ActivityTypeId'},{path:'i18n>xtit.actDetailsTitle'}],formatter:'.formatter.assignCustomData'}" value="test" writeToDom="true"/>
                         </core:customData>
                     </core:Title>
-                    <core:Fragment fragmentName="com.test.activityreg.fragments.ActivityRegistration.ActivityDetails" type="XML"/>
+                    <core:Fragment fragmentName="com.test.activityreg.fragments.CXDesign.ActivityDetails" type="XML"/>
                     <core:Title id="idTitleEmpty"></core:Title>
                     <!--risk info button-->
                     <Label id="idLabelActivityRisk" text="Activity Risk" visible="{layouts>/SelectedLayout/ActivityRisk/Visible}" tooltip="Activity Risk"></Label>
@@ -67,9 +67,9 @@
                         <core:Fragment fragmentName="com.presalescentral.activityform.view.ActivityFormFragments.completeActionsTable" type="XML"/>
                     </content>
                 </Panel> -->
-                <Panel headerText="{i18n>xtit.demoEnvironmentTitle}" id="demoData" class="demoEnvironment" visible="true">
+                <Panel headerText="{i18n>xtit.demoEnvironmentTitle}" id="demoData" class="demoEnvironment" visible="false">
                     <content>
-                        <core:Fragment fragmentName="com.test.activityreg.fragments.ActivityRegistration.DemoEnvironment" type="XML"/>
+                        <core:Fragment fragmentName="com.test.activityreg.fragments.CXDesign.DemoEnvironment" type="XML"/>
                     </content>
                 </Panel>
                 <Panel id="idComments" visible="false">

@@ -4,12 +4,12 @@ sap.ui.define(
     "use strict";
 
     return BaseController.extend(
-      "com.test.activityreg.controller.ActivityRegistration",
+      "com.test.activityreg.controller.AcadaemyRequest",
       {
-        onInit: function () {
+        onInit() {
           let oRouter = sap.ui.core.UIComponent.getRouterFor(this);
           oRouter
-            .getRoute("ActivityRegistration")
+            .getRoute("AcadaemyRequest")
             .attachMatched(this._onRouteMatched, this);
         },
 

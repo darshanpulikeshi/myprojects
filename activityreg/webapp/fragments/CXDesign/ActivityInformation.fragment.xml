@@ -1,0 +1,108 @@
+<core:FragmentDefinition xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core" class="sapUiSizeCompact">
+    <Label id="idLabelOppChecktext" text="{i18n>xtit.opportunityCheckTxt}" required="{= ${masterDataModel>/FormLayoutID} === '00026' ? true:false}"/>
+    <RadioButtonGroup id="idAssociatedWith" columns="5" select="handleOpportunityCheck" selectedIndex="{registrationModel>/associateType}" buttons="{registrationModel>/registrationTypes}">
+        <RadioButton id="opportunityCheck" text="{registrationModel>name}" selected="{registrationModel>type}" enabled="{registrationModel>isEnabled}">
+            <customData>
+                <core:CustomData key="{registrationModel>key}"/>
+            </customData>
+        </RadioButton>
+    </RadioButtonGroup>
+    <Label id="eventTitle" text="{i18n>xtit.eventTitle}" tooltip="{i18n>xtit.eventTitle}" visible="{= !${appProperties>/showOpp} &amp;&amp; ${layouts>/SelectedLayout/EventTitle/Visible}}"></Label>
+    <Input value="{registrationModel>/eventTitle}" valueStateText="Please enter Event title" showSuggestion="false" id="actSetSel" valueState="{registrationModel>/titleValState}" suggestionItemSelected="onSuggestItemSelected" change="onActivitySetChange" submit="onActivitySetSubmit" visible="{= !${appProperties>/showOpp} &amp;&amp; ${layouts>/SelectedLayout/EventTitle/Visible}}" suggestionItems="{path:'masterDataModel>/Yc_Mac_M_Actity_Set',filters :[{ path:'ProfitCenter', operator:'NE', value1:'' }]}" busy="{path:'masterDataModel>/Yc_Mac_M_Actity_Set',formatter:'.formatter.setFieldBusyIndicator'}" maxLength="150" showValueHelp="true" valueHelpOnly="true" valueHelpRequest="openTitleSelectPopUp">
+        <suggestionItems>
+            <core:Item text="{masterDataModel>Description}" key="{masterDataModel>ActivitySetId}"></core:Item>
+        </suggestionItems>
+    </Input>
+    <!--account start-->
+    <Label id="idActivitformAccount" text="{i18n>account}" required="true" visible="{= ${layouts>/SelectedLayout/Account/Visible} &amp;&amp; ${registrationModel>/associateType} !== 2}"/>
+    <HBox id="idHBoxAccount" class="switchAlignment" visible="{= ${layouts>/SelectedLayout/Account/Visible} &amp;&amp; ${registrationModel>/associateType} !== 2}">
+        <Input showValueHelp="true" valueHelpOnly="true" placeholder="{i18n>accountPlaceholderTxt}" id="cvaAccount" editable="{= (${masterDataModel>/FormLayoutID} === '00017' || ${masterDataModel>/FormLayoutID} === '00018' || ${masterDataModel>/FormLayoutID} === '00019' || ${masterDataModel>/FormLayoutID} === '00020' || ${masterDataModel>/FormLayoutID} === '00022' || (${registrationModel>/associateType} === 0 &amp;&amp; ${masterDataModel>/FormLayoutID} === '00023') || (${registrationModel>/associateType} === 0 &amp;&amp; ${masterDataModel>/FormLayoutID} === '00024') || (${registrationModel>/associateType} === 0 &amp;&amp; ${masterDataModel>/FormLayoutID} === '00015') || (${registrationModel>/associateType} === 0 &amp;&amp; ${masterDataModel>/FormLayoutID} === '00021')) &amp;&amp; (${default>/SLActGUID} === '00000000-0000-0000-0000-000000000000')}" valueHelpRequest="handleCvaAccount" change="handleChange" value="{cvaModel>/selectedOpportunity/AccountId_Name}" valueStateText="{i18n>account}" visible="{= ${masterDataModel>/FormLayoutID} !== '00013' &amp;&amp; ${registrationModel>/associateType} !== 2}"></Input>
+        <Button icon="sap-icon://message-information" press="handleOpenAccountInfoPress" id="accntInfo" type="Transparent" visible="{= ${cvaModel>/selectedOpportunity/ACCOUNT_NAME} !== ''}"/>
+    </HBox>
+    <!--account close-->
+    <!--opportunityNumber-->
+    <Label text="Opportunity No" id="idOpportunityNoAca" visible="true"></Label>
+    <MultiInput visible="true" valueHelpOnly="false" valueHelpRequest="openAdditionalOpptDialog" id="OpptMultiInputAca" tokens="{default>/to_AAddOpp}" placeholder="Select/Enter Opportunity" busy="{path:'default>/to_AAddOpp',formatter:'.formatter.setFieldBusyIndicator'}">
+        <tokens>
+            <Token text="{default>OpportunityNo}" key="{default>OpportunityNo}" delete="handleAdditionalOppChange"></Token>
+        </tokens>
+    </MultiInput>
+    <!-- <Label id="idLabelActivityType" text="{/#Yc_Mac_T_Act_MainType/ActivityTypeId/@sap:label}" tooltip="{/#Yc_Mac_T_Act_MainType/ActivityTypeId/@sap:label}" required="true" visible="{layouts>/SelectedLayout/ActivityTypeId/Visible}"></Label>
+    <HBox id="idHBoxActivityType" class="switchAlignment" visible="{layouts>/SelectedLayout/ActivityTypeId/Visible}">
+        <Input showValueHelp="true" valueHelpOnly="true" placeholder="{i18n>xtit.actTypePlaceholderTxt}" id="actTypeSel" value="{default>/ActivityTypeDescription}" valueHelpRequest="openActivitySelectPopUp" change="handleChange" valueStateText="Activity Type" visible="{layouts>/SelectedLayout/ActivityTypeId/Visible}"></Input>
+        <Button id="idButtonActivityType" icon="sap-icon://message-information" press="openActivityTypeInfo" type="Transparent" visible="{= ${default>/ActivityTypeId} !== ''}"/>
+    </HBox> -->
+    <!-- <Label text="{i18n>additionalOppt}" id="additionalOppLbl" visible="{appProperties>/showAddOpp}"></Label>
+    <MultiInput editable="{= ${default>/Authorized} !=='' || (${user>/CXRFP_User} ==='X' &amp;&amp; ${masterDataModel>/FormLayoutID} === '00012') || ((${masterDataModel>/FormLayoutID} === '00014' || ${masterDataModel>/FormLayoutID} === '00015' || ${masterDataModel>/FormLayoutID} === '00016') &amp;&amp; ${appProperties>/authFlag} === 'X')}" visible="{appProperties>/showAddOpp}" valueHelpOnly="false" valueHelpRequest="openAdditionalOpptDialog" id="additionalOpptMultiInput" tokens="{default>/to_AAddOpp}" placeholder="{i18n>selectAddOpp}" busy="{path:'default>/to_AAddOpp',formatter:'.formatter.setFieldBusyIndicator'}">
+        <tokens>
+            <Token text="{default>OpportunityNo}" key="{default>OpportunityNo}" delete="handleAdditionalOppChange"></Token>
+        </tokens>
+    </MultiInput> -->
+    <Label id="idLabelRequestDeliveryCX" text="Requested Delivery" visible="true" required="true"></Label>
+    <DatePicker id="idDatePickerRequestDeliveryCX" dateValue="{path:'default>/StartDate'}" visible="true" placeholder="Enter Requested Delivery Date"></DatePicker>
+    <Label id="idLabelDemo" text="Schedule Demo Date" visible="true" required="true" tooltip="StartDate"></Label>
+    <DateTimePicker id="idDateTimeDemoDate" dateValue="{path:'default>/StartDate'}" visible="true"></DateTimePicker>
+    <!-- <Label id="idLabelEndDateTime" text="{= ${masterDataModel>/FormLayoutID} !== '00015'? ${/#Yc_Mac_T_Act_MainType/EndDate/@sap:label} : ${i18n>xtit.plannedWorkshopDate}}" visible="{layouts>/SelectedLayout/EndDate/Visible}" required="true" tooltip="{= ${masterDataModel>/FormLayoutID} !== '00015'? ${/#Yc_Mac_T_Act_MainType/EndDate/@sap:label} : ${i18n>xtit.plannedWorkshopDate}}"></Label>
+    <DateTimePicker id="idDateTimeEndate" dateValue="{path:'default>/EndDate'}" visible="true"></DateTimePicker> -->
+    <!-- <Label id="idLabelEndDate" text="EndDate" visible="true"></Label>
+    <DatePicker id="idDatePickerEndDate" dateValue="{path:'default>/EndDate'}" visible="true"></DatePicker> -->
+    <!-- <Label id="idLabelDryRunDateTime" text="DryRunDate" visible="true" required="false" tooltip="DryRunDate"></Label>
+    <DateTimePicker id="idDateTimeDryRun" dateValue="{path:'default>/DryRunDate'}" visible="true" placeholder="{i18n>xtit.dryRunDatePlaceholderTxt}" displayFormat="MMM d, y, h:mm a" change="handleChange" valueStateText="Dry Run Date" enabled="{= ${default>/Authorized} !=='' || (${masterDataModel>/FormLayoutID} === '00001' &amp;&amp; ${appProperties>/DemoEditAccess} === 'X')}"></DateTimePicker> -->
+    <!-- <Label id="idLabelTimeFront" text="Time in front of customer" visible="false"></Label> -->
+    <!-- <StepInput value="{default>/CustomerDays}" change="onCstmrDayschange" visible="false" min="0" max="999" placeholder="Days" description="Days" fieldWidth="75%" id="cstmrDays" valueStateText="Days"></StepInput> -->
+    <!-- <StepInput value="{default>/CustomerHours}" change="onCstmrHourschange" visible="false" max="8" min="0" placeholder="Hours" description="Hours" fieldWidth="75%" id="cstmrHours" valueStateText="Hours"></StepInput> -->
+    <!--Updates to the Demo form #197-->
+    <!-- <Label text="{/#Yc_Mac_T_Act_MainType/RequestedDelivery/@sap:label}" visible="{layouts>/SelectedLayout/RequestedDelivery/Visible}" required="true" tooltip="{/#Yc_Mac_T_Act_MainType/RequestedDelivery/@sap:label}"></Label> -->
+    <!-- <DateTimePicker dateValue="{path:'default>/RequestedDelivery'}" visible="{layouts>/SelectedLayout/RequestedDelivery/Visible}" placeholder="Enter Requested Delivery Date" displayFormat="MMM d, y, h:mm a" id="reqDelDate" change="handleChange" valueStateText="Requested Delivery Date" enabled="{= (${default>/Authorized} !=='' || ${user>/CXRFP_User} ==='X')}" minDate="{appProperties>/minDate}"></DateTimePicker> -->
+    <!--Updates to the Demo form #300-->
+    <!-- <Label text="{i18n>scheduleDemoDate}" visible="{=${layouts>/SelectedLayout/ScheduleDemoDate/Visible}?true:false}" required="{layouts>/SelectedLayout/ScheduleDemoDate/Visible}" tooltip="{i18n>scheduleDemoDate}"></Label> -->
+    <!-- <DateTimePicker dateValue="{path:'default>/ScheduledDemoDt'}" visible="{=${layouts>/SelectedLayout/ScheduleDemoDate/Visible}?true:false}" placeholder="Enter Schedule Demo Date" displayFormat="MMM d, y, h:mm a" id="scheduleDemoDate" change="handleChange" valueStateText="{i18n>scheduleDemoDate}" enabled="{= (${default>/Authorized} !=='' || ${user>/CXRFP_User} ==='X')}" minDate="{appProperties>/minDate}"></DateTimePicker> -->
+    <!--Updates to the Demo form #300-->
+    <Label id="idLabelDescription" text="Description" tooltip="Description" required="{=${masterDataModel>/FormLayoutID} === '00026'? true:false}"></Label>
+    <TextArea id="activityFormDescription" value="{default>/Description}" change="handleChange" valueStateText="Description" placeholder="{= ${masterDataModel>/isServiceRequest} ? ${i18n>xtit.reqDescPlaceholderTxt} : ${i18n>xtit.descriptionPlaceholderTxt}}" maxLength="{= ${masterDataModel>/FormLayoutID} === '00015' ? 250 : 500}" rows="4" enabled="{= ${default>/Authorized} !=='' || (${user>/CXRFP_User} ==='X' &amp;&amp; ${masterDataModel>/FormLayoutID} === '00012') || ((${masterDataModel>/FormLayoutID} === '00014' || ${masterDataModel>/FormLayoutID} === '00015' || ${masterDataModel>/FormLayoutID} === '00016') &amp;&amp; ${appProperties>/authFlag} === 'X') || (${masterDataModel>/FormLayoutID} === '00001' &amp;&amp; ${appProperties>/DemoEditAccess} === 'X')}"></TextArea>
+    <Label id="idLabelSolution" text="{i18n>solutions}" visible="{layouts>/SelectedLayout/CXRFPSol/Visible}" required="true"></Label> -->
+    <MultiComboBox visible="{layouts>/SelectedLayout/CXRFPSol/Visible}" items="{path:'masterDataModel>/CXRFPSol',sorter : { path : 'SolutionDesc' }}" placeholder="{i18n>cxrfpSolutions}" id="cxrfpSolutionsSel" selectionFinish="handleCXRFPSolutionChange" enabled="{= (${default>/Authorized} !=='' || ${user>/CXRFP_User} ==='X')}" valueStateText="{i18n>solutions}" busy="{path:'masterDataModel>/CXRFPSol',formatter:'.formatter.setFieldBusyIndicator'}">
+        <core:Item text="{masterDataModel>SolutionDesc}" key="{masterDataModel>SolId}"></core:Item>
+    </MultiComboBox>
+    <!--Updates to the Demo form #300-->
+    <!-- <Label id="idLabelSolution" text="Solutions" visible="true" required="true"></Label>
+    <Select id="idSelectRegion" visible="{layouts>/SelectedLayout/ActvtStatus/Visible}" items="{masterDataModel>/YC_MAC_M_CXRFP_STAT}" selectedKey="{default>/ActvtStatus}" enabled="{= ${appProperties>/isEditMode} &amp;&amp; ${user>/CXRFP_User} ==='X'}" change="handleChange" busy="{path:'masterDataModel>/YC_MAC_M_CXRFP_STAT',formatter:'.formatter.setFieldBusyIndicator'}">
+        <core:Item text="{masterDataModel>status_desc}" key="{masterDataModel>status_id}"></core:Item>
+    </Select> -->
+    <Label id="idLabelcxDesignRegion" text="{i18n>cxDesignRegionMU}" visible="{=${layouts>/SelectedLayout/CXDesignRegionMU/Visible}?true:false}" required="{layouts>/SelectedLayout/CXDesignRegionMU/Required}"></Label>
+    <MultiComboBox visible="{=${layouts>/SelectedLayout/CXDesignRegionMU/Visible}?true:false}" items="{path:'masterDataModel>/YC_MAC_M_ACT_REGION_MU',sorter : { path : 'RegionMu' }}" placeholder="{i18n>selCxDesignRegionMU}" id="cxDesignRegionMU" selectionFinish="handleCxDesignRegionMuChange" enabled="{= (${default>/Authorized} !=='' || ${user>/CXRFP_User} ==='X')}" valueStateText="{i18n>cxDesignRegionMU}" busy="{path:'masterDataModel>/YC_MAC_M_ACT_REGION_MU',formatter:'.formatter.setFieldBusyIndicator'}">
+        <core:Item text="{masterDataModel>RegionMu}" key="{masterDataModel>RegMuID}"></core:Item>
+    </MultiComboBox>
+    <!--Add "Existing Client" check-box to CX RFP form detail page #261 start-->
+    <!-- <Label text="" visible="true"></Label>
+    <CheckBox id="idCheckBoxEC" text="Existing Client?" visible="true" select="handleExistingClientChange" selected="{= ${default>/ExistingClient}.toUpperCase() === 'X'}"></CheckBox>
+    <Label text="" visible="true"></Label>
+    <CheckBox id="idCheckBoxSecurity" text="Security?" visible="{layouts>/SelectedLayout/Security/Visible}" select="handleSecurityChange" selected="{= ${default>/Security}.toUpperCase() === 'X'}"></CheckBox> -->
+    <!-- <Label text="{i18n>Industry.IVA}" required="true" visible="{layouts>/SelectedLayout/Industry/Visible}"></Label>
+    <FlexBox alignItems="Start">
+        <VBox visible="{layouts>/SelectedLayout/Industry/Visible}" width="100%">
+            <Select id="ivaIndustry" enabled="{= ${default>/Authorized} !==''}" width="100%" visible="{= ${layouts>/SelectedLayout/Industry/Visible} &amp;&amp; ${masterDataModel>/FormLayoutID} !== '00026' }" forceSelection="false" items="{path:'masterDataModel>/YC_MAC_M_INDUSTRY',sorter:{path:'IndustryDesc'}}" selectedKey="{default>/IndustryId}" change="handleChange" valueStateText="{i18n>Industry.IVA}" busy="{path:'masterDataModel>/YC_MAC_M_INDUSTRY',formatter:'.formatter.setFieldBusyIndicator'}">
+                <core:Item text="{masterDataModel>IndustryDesc}" key="{masterDataModel>IndustryId}"></core:Item>
+            </Select>
+            <MultiComboBox visible="{= ${masterDataModel>/FormLayoutID} === '00026'}" width="100%" items="{path:'masterDataModel>/YC_MAC_M_INDUSTRY',sorter:{path:'IndustryDesc'}}" placeholder="{i18n>IndustryPlaceholder}" id="cxDesignIndustry" selectionFinish="handleCxDesignIndustryChange" enabled="{= (${default>/Authorized} !=='' || ${user>/CXRFP_User} ==='X')}" valueStateText="{i18n>Industry.IVA}" busy="{path:'masterDataModel>/YC_MAC_M_INDUSTRY',formatter:'.formatter.setFieldBusyIndicator'}">
+                <core:Item text="{masterDataModel>IndustryDesc}" key="{masterDataModel>IndustryId}"></core:Item>
+            </MultiComboBox>
+            <layoutData>
+                <FlexItemData growFactor="1"/>
+            </layoutData>
+        </VBox>
+    </FlexBox> -->
+    <!-- <Label text="{i18n>xtit.custRegion}" required="true" visible="{layouts>/SelectedLayout/HSCRegion/Visible}"></Label>
+    <ComboBox enabled="{= ${default>/Authorized} !=='' || (${layouts>/SelectedLayout/HSCRegion/Visible} &amp;&amp; ${appProperties>/authFlag} === 'X')}" visible="{layouts>/SelectedLayout/HSCRegion/Visible}" id="hscIvaregion" valueStateText="{i18n>xtit.custRegion}" items="{path:'masterDataModel>/YC_MAC_M_REGION',sorter:{path:'RegionDescription'}}" selectedKey="{default>/ActvtRegion}" change="handleHSCRegionChange" busy="{path:'masterDataModel>/YC_MAC_M_REGION',formatter:'.formatter.setFieldBusyIndicator'}">
+        <core:Item text="{masterDataModel>RegionDescription}" key="{masterDataModel>RegionId}"></core:Item>
+    </ComboBox> -->
+    <Label text="Industry" required="true" visible="true"></Label>
+    <ComboBox enabled="{= ${default>/Authorized} !==''}" visible="{layouts>/SelectedLayout/MarketUnit/Visible}" id="ivaMu" items="{path:'masterDataModel>/YC_MAC_M_MU',sorter:[{path:'RegionDescription', group:true},{path:'MuDesc', descending:false}]}" selectedKey="{default>/MuId}" change="handleChange" valueStateText="{i18n>Mu.IVA}">
+        <core:Item text="{masterDataModel>MuDesc}" key="{masterDataModel>MuId}"></core:Item>
+    </ComboBox>
+    <!--Updates to the Demo form #300-->
+    <Label text="{i18n>customerUrl}" required="true" visible="true"/>
+    <Input value="{default>/CustomerUrl}" visible="{=${layouts>/SelectedLayout/CustomerURL/Visible}?true:false}" enabled="true" change="handleCustomUrlChange" placeholder="{i18n>enterCustomerUrl}" id="customerUrl" maxLength="50" valueStateText="{i18n>customerUrl}"/>
+</core:FragmentDefinition>

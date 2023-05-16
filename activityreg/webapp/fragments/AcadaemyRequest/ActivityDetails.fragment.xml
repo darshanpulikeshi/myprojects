@@ -1,0 +1,248 @@
+<core:FragmentDefinition xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core" class="sapUiSizeCompact">
+	<!-- <Label text="Type" visible="true" tooltip="Type" required="true"></Label>
+	<FlexBox alignItems="Start">
+		<VBox visible="true"> <MultiComboBox items="{path:'masterDataModel>/Yc_Mac_M_Activity_Det_Type', sorter : { path : 'Description' }, filters:[{path:'ActTypeId', operator:'EQ',value1:'0001'},{path:'OperationStatus', operator:'EQ', value1:true}]}" placeholder="{i18n>xtit.actDetTypePlaceholderTxt}" visible="{= ${masterDataModel>/FormLayoutID} === '00001' || ${masterDataModel>/FormLayoutID} === '00024'}" id="typeSel" selectionFinish="handleTypeSelected" width="100%" valueStateText="Type" enabled="{= ${default>/Authorized} !=='' || (${masterDataModel>/FormLayoutID} === '00001' &amp;&amp; ${appProperties>/DemoEditAccess} === 'X')}" busy="{path:'masterDataModel>/Yc_Mac_M_Activity_Det_Type',formatter:'.formatter.setFieldBusyIndicator'}">
+				<items>
+					<core:Item text="{masterDataModel>Description}" key="{masterDataModel>TypeId}"></core:Item>
+				</items>
+			</MultiComboBox>
+			<ComboBox items="{path:'masterDataModel>/Yc_Mac_M_Activity_Det_Type', sorter : { path : 'Description' }}" placeholder="{i18n>xtit.actDetTypePlaceholderTxt}" id="eventTypeSel" visible="false" width="100%" change="handleTypeSelected" valueStateText="Type" enabled="{= ${default>/Authorized} !==''}" busy="{path:'masterDataModel>/Yc_Mac_M_Activity_Det_Type',formatter:'.formatter.setFieldBusyIndicator'}">
+				<items>
+					<core:Item text="{masterDataModel>Description}" key="{masterDataModel>TypeId}"></core:Item>
+				</items>
+			</ComboBox>
+			<layoutData>
+				<FlexItemData growFactor="1"/>
+			</layoutData>
+		</VBox>
+		<core:Icon src="sap-icon://message-warning" color="red" press="onDisplayInactiveDetType" visible="false" id="inActiveTypeMsg" class="alignTeamDeleteIcon"></core:Icon>
+	</FlexBox> -->
+	<!--iva sales LOB start-->
+	<!-- <Label text="Sales LOB" visible="{layouts>/SelectedLayout/SalesLOB/Visible}" required="true"></Label> -->
+	<!-- <ComboBox items="{path:'masterDataModel>/YC_MAC_M_SALES_LOB' , sorter : { path : 'SalesLOBDesc' },filters :[{ path:'ActivityTypeId', operator:'EQ', value1:'0018' }]}" placeholder="Select Sales LOB" id="idSalesLOB" change="handleSelect" visible="{layouts>/SelectedLayout/SalesLOB/Visible}" selectedKey="{default>/SalesLobId}" busy="{path:'masterDataModel>/YC_MAC_M_SALES_LOB',formatter:'.formatter.setFieldBusyIndicator'}">
+		<items>
+			<core:Item text="{masterDataModel>SalesLOBDesc}" key="{masterDataModel>SalesLOBId}"></core:Item>
+		</items>
+	</ComboBox> -->
+	<!--iva sales LOB end-->
+	<!--Business Area Engaged start-->
+	<!-- <Label text="Business Area Engaged" required="true" visible="{layouts>/SelectedLayout/BsnsAreaEngd/Visible}"></Label>
+	<MultiComboBox items="{path:'masterDataModel>/YC_MAC_M_BSNSAREAENGD', sorter : { path : 'BsnsAreaEngdDesc' }}" placeholder="Select Business Area Engaged" id="bsAreaEngagedSel" selectionFinish="setBusinessAreaEngaged" width="100%" valueStateText="Business Area Engaged" busy="{path:'masterDataModel>/YC_MAC_M_BSNSAREAENGD',formatter:'.formatter.setFieldBusyIndicator'}" visible="{layouts>/SelectedLayout/BsnsAreaEngd/Visible}">
+		<items>
+			<core:Item text="{masterDataModel>BsnsAreaEngdDesc}" key="{masterDataModel>BsnsAreaEngdID}"></core:Item>
+		</items>
+	</MultiComboBox> -->
+	<!--Business Area Engaged end-->
+	<!-- <Label text="Method" visible="true" tooltip="Method" required="true"></Label>
+	<FlexBox alignItems="Start" justifyContent="SpaceBetween">
+		<ComboBox items="{path:'masterDataModel>/methodData', sorter : { path : 'description' }}" placeholder="{i18n>xtit.actMethodPlaceholderTxt}" selectedKey="{default>/MethodId}" id="methodSel" change="handleMethodChange" valueStateText="{/#Yc_Mac_T_Act_MainType/MethodId/@sap:label}" busy="{path:'masterDataModel>/methodData',formatter:'.formatter.setFieldBusyIndicator'}" width="100%" enabled="{= ${default>/Authorized} !=='' || (${masterDataModel>/FormLayoutID} === '0001' &amp;&amp; ${appProperties>/DemoEditAccess} === 'X')}" visible="{layouts>/SelectedLayout/Method/Visible}">
+			<items>
+				<core:Item text="{masterDataModel>description}" key="{masterDataModel>methodid}"></core:Item>
+			</items>
+			<layoutData>
+				<FlexItemData growFactor="1"/>
+			</layoutData>
+		</ComboBox>
+		<core:Icon src="sap-icon://message-warning" color="red" press="onDisplayInactiveDetMethod" visible="false" id="inActiveMethodMsg" class="alignTeamDeleteIcon"></core:Icon>
+	</FlexBox> -->
+	<!-- <Label text="{/#Yc_Mac_T_Act_MainType/VirtualStudioId/@sap:label}" tooltip="{/#Yc_Mac_T_Act_MainType/VirtualStudioId/@sap:label}" required="true" visible="{visibilityModel>/0/VSVisible}"></Label> -->
+	<!-- <ComboBox items="{path:'masterDataModel>/YC_MAC_M_DM_CHILD_VALUES' , sorter : { path : 'description' },filters:[{path:'dmid', operator:'EQ',value1:'S'}]}" placeholder="{i18n>xtit.virtualStudioPlaceholderTxt}" selectedKey="{default>/VirtualStudioId}" id="VSSel" visible="{visibilityModel>/0/VSVisible}" width="100%" change="handleSelect" valueStateText="Virtual Studio" busy="{path:'masterDataModel>/YC_MAC_M_DM_CHILD_VALUES',formatter:'.formatter.setFieldBusyIndicator'}">
+		<items>
+			<core:Item text="{masterDataModel>description}" key="{masterDataModel>id}"></core:Item>
+		</items>
+	</ComboBox> -->
+	<!-- <Label text="{/#Yc_Mac_T_Act_MainType/BoardRoomNumber/@sap:label}" tooltip="{/#Yc_Mac_T_Act_MainType/BoardRoomNumber/@sap:label}" required="true" visible="{visibilityModel>/0/DBVisible}"></Label> -->
+	<!-- <VBox visible="{visibilityModel>/0/DBVisible}"> <ComboBox items="{path:'masterDataModel>/YC_MAC_M_DM_CHILD_VALUES', sorter : { path : 'description' },filters:[{path:'dmid', operator:'EQ',value1:'B'}]}" placeholder="{i18n>xtit.digitalBaordRoomPlaceholderTxt}" selectedKey="{default>/BoardRoomNumber}" id="DBSel" visible="{visibilityModel>/0/DBVisible}" width="100%" change="handleSelect" valueStateText="Digital Board Room" busy="{path:'masterDataModel>/YC_MAC_M_DM_CHILD_VALUES',formatter:'.formatter.setFieldBusyIndicator'}">
+			<items>
+				<core:Item text="{masterDataModel>description}" key="{masterDataModel>id}"></core:Item>
+			</items>
+		</ComboBox>
+		<HBox id="DBTxt" visible="{visibilityModel>/0/DBVisible}">
+			<core:HTML visible="{visibilityModel>/0/DBVisible}" content='&lt;p style=&quot;font-size:11px;&quot; id=&quot;cache20&quot;&gt;&lt;span id=&quot;cache21&quot;&gt;To avoid resource conflicts. &lt;/span&gt;&lt;a id=&quot;u3658&quot; href=&quot;https://jam4.sapjam.com/wiki/show/vHYUktNcAYa8XQzFbw1ztc&quot; target=&quot;_blank&quot; class=&quot;link&quot; tabindex=&quot;0&quot; style=&quot;cursor: pointer;&quot;&gt;&lt;span style=&quot;font-size: 11px; text-decoration: underline; color: rgb(0, 0, 255);&quot; id=&quot;cache22&quot;&gt;Contact the resource owner&lt;/span&gt;&lt;/a&gt;&lt;span id=&quot;cache23&quot;&gt; to insure the room has been reserved specifically for you demo.&lt;/span&gt;&lt;/p&gt;'></core:HTML>
+		</HBox> -->
+	<!-- </VBox> -->
+	<!-- <Label text="Solutions" tooltip="{/#Yc_Mac_T_SolutionType/SolId/@sap:label}" visible="{visibilityModel>/0/visible}" required="true"></Label>
+	<FlexBox alignItems="Start">
+		<MultiInput enableMultiLineMode="true" id="additionalSolutions" placeholder="{i18n>xtit.addSolPlaceholderTxt}" valueHelpRequest="openSolutionHierarchy" tokens="{oSolutionsModel>/SolTokens}" visible="{visibilityModel>/0/visible}" tokenUpdate="fnDeleteSolMatTokens" valueHelpOnly="true" valueStateText="Solutions" editable="{= ${default>/Authorized} !=='' || (${masterDataModel>/FormLayoutID} === '0001' &amp;&amp; ${appProperties>/DemoEditAccess} === 'X')}">
+			<tokens>
+				<Token key="{oSolutionsModel>LevelId}" text="{oSolutionsModel>LevelDesc}" delete="fnDeleteSolMatTokens">
+					<customData>
+						<core:CustomData key="SOL_MULTI_SELECT"/>
+					</customData>
+				</Token>
+			</tokens>
+			<customData>
+				<core:CustomData key="SOL_MULTI_SELECT"/>
+			</customData>
+			<layoutData>
+				<FlexItemData growFactor="1"/>
+			</layoutData>
+		</MultiInput>
+		<core:Icon src="sap-icon://message-warning" color="red" press="onDisplayOldSolMsg" visible="false" id="oldSolMsgBtn" class="alignTeamDeleteIcon"></core:Icon>
+	</FlexBox> -->
+	<!--iva fields start-->
+	<!-- <Label text="Scope" visible="{layouts>/SelectedLayout/Scope/Visible}"></Label> -->
+	<!-- <ComboBox items="{path:'masterDataModel>/YC_MAC_M_SCOPE', sorter : { path : 'ScopeDesc' },filters :[{ path:'ActivityTypeId', operator:'EQ', value1:'0018' }]}" placeholder="Select Scope" id="idScope" change="handleSelect" visible="{layouts>/SelectedLayout/Scope/Visible}" selectedKey="{default>/ScopeId}" busy="{path:'masterDataModel>/YC_MAC_M_SCOPE',formatter:'.formatter.setFieldBusyIndicator'}">
+		<items>
+			<core:Item text="{masterDataModel>ScopeDesc}" key="{masterDataModel>ScopeId}"></core:Item>
+		</items>
+	</ComboBox> -->
+	<!-- <Label text="Solution" visible="{layouts>/SelectedLayout/VxMainSolution/Visible}"></Label>
+	<Input valueHelpRequest="openSolutionHierarchy" showValueHelp="true" placeholder="{i18n>xtit.mainSolPlaceholderTxt}" valueHelpOnly="true" id="idMainsolIva" change="handleChange" value="{oSolutionsModel>/SolutionDesc}" visible="{layouts>/SelectedLayout/VxMainSolution/Visible}" valueStateText="Solution" editable="{= ${default>/Authorized} !=='' || ${appProperties>/DemoEditAccess} === 'X'}">
+		<customData>
+			<core:CustomData key="solId" value="{default>/MainSolutionId}"></core:CustomData>
+		</customData>
+	</Input> -->
+	<!-- <Label text="{i18n>incrementalPipeline}" visible="{layouts>/SelectedLayout/IncrPipeline/Visible}"></Label>
+	<HBox visible="{layouts>/SelectedLayout/IncrPipeline/Visible}">
+		<Button icon="sap-icon://message-information" press="openIncrementalInfo" type="Transparent" id="incrementalInfoBtn" tooltip="{i18n>RiskinfoButtontooltip}"/>
+		<VBox width="100%">
+			<Input valueState="{masterDataModel>/IncPipelineValState}" value="{default>/IncrPipeline}" change="fnUpdateIncrementalPipeline" width="100%" placeholder="{i18n>incrementalPipeline}" maxLength="10" liveChange="fnCheckIncrementalPipelineLen"/>
+		</VBox>
+	</HBox>
+	<Label text="" visible="{layouts>/SelectedLayout/BPSMEAlign/Visible}"></Label>
+	<CheckBox text="{i18n>BusinessAndProcessSmeAlignment}" visible="{layouts>/SelectedLayout/BPSMEAlign/Visible}" selected="{= ${default>/BPSMEAlign}}" select="handleBpsmeAlignmntChange"></CheckBox> -->
+	<!--iva fields end-->
+	<!--cva feilds start-->
+	<!-- <Label text="{/#Yc_Mac_T_Act_MainType/EngLevelDesc/@sap:label}" visible="{layouts>/SelectedLayout/CustomerEngLevel/Visible}" tooltip="{/#Yc_Mac_T_Act_MainType/EngLevelDesc/@sap:label}" required="true"></Label>
+	<HBox>
+		<Button icon="sap-icon://message-information" press="showActDetailStatusPopUp" type="Transparent" tooltip="Customer Engagement Info" visible="{= ${masterDataModel>/FormLayoutID} === '00021'}"/>
+		<VBox width="100%">
+			<ComboBox placeholder="{i18n>xtit.CustomerEngmntLvlPlaceholderTxt}" id="customerEngmntLvl" items="{path: 'masterDataModel>/YC_MAC_M_ENG_TYPE', sorter : { path : 'EngTypeDesc' }}" change="handleSelect" valueStateText="Customer Engagement Level" width="100%" visible="{layouts>/SelectedLayout/CustomerEngLevel/Visible}" selectedKey="{default>/EngLevel}" busy="{path:'masterDataModel>/YC_MAC_M_ENG_TYPE',formatter:'.formatter.setFieldBusyIndicator'}">
+				<items>
+					<core:Item text="{masterDataModel>EngTypeDesc}" key="{masterDataModel>EngTypeId}"></core:Item>
+				</items>
+			</ComboBox>
+		</VBox>
+	</HBox> -->
+	<!--status field start-->
+	<!-- <Label text="Status" visible="{layouts>/SelectedLayout/Status/Visible}" tooltip="Status" required="true"></Label>
+	<ComboBox placeholder="Select Status" id="idStatus" width="100%" items="{path: 'masterDataModel>/YC_MAC_M_ACTVT_STATUS', sorter : { path : 'StatusDescription' }, filters :[{ path:'ProjectType', operator:'EQ', value1:'ACTVT_CVA'}]}" change="handleSelect" valueStateText="Status" busy="{path:'masterDataModel>/YC_MAC_M_ACTVT_STATUS',formatter:'.formatter.setFieldBusyIndicator'}" visible="{layouts>/SelectedLayout/Status/Visible}" selectedKey="{default>/ActvtStatus}">
+		<items>
+			<core:Item text="{masterDataModel>StatusDescription}" key="{masterDataModel>StatusId}"></core:Item>
+		</items>
+	</ComboBox> -->
+	<!--status field end-->
+	<!-- <Label text=""/>
+	<VBox items="{masterDataModel>/YC_MAC_M_PHASE}" visible="{layouts>/SelectedLayout/Phases/Visible}" id="phaseVbox">
+		<items>
+			<VBox>
+				<CheckBox text="{masterDataModel>PhaseDesc}" select="addDateMethod"/>
+				<FlexBox alignItems="Center" justifyContent="End" visible="false">
+					<Label text="{i18n>completiondate} :" tooltip="{i18n>completiondate}" required="true" class="sapUiTinyMarginEnd"></Label>
+					<DatePicker placeholder="{i18n>xtit.prsntnDatePlaceholderTxt}" displayFormat="MMM d, y" valueStateText="{i18n>completiondate}" change="handleDateMethodChange"/>
+				</FlexBox>
+				<FlexBox alignItems="Center" justifyContent="End" visible="false">
+					<Label text="{/#Yc_Mac_T_Act_MainType/MethodId/@sap:label} :" tooltip="{/#Yc_Mac_T_Act_MainType/MethodId/@sap:label}" required="true" class="sapUiTinyMarginEnd"></Label>
+					<ComboBox items="{path:'masterDataModel>/methodData' , sorter : { path : 'description' }}" placeholder="{i18n>cvamethod}" valueStateText="{/#Yc_Mac_T_Act_MainType/MethodId/@sap:label}" change="handleDateMethodChange">
+						<items>
+							<core:Item text="{masterDataModel>description}" key="{masterDataModel>methodid}"></core:Item>
+						</items>
+					</ComboBox>
+				</FlexBox>
+			</VBox>
+		</items>
+	</VBox> -->
+	<!--content in KM checkbox start-->
+	<!-- <Label text=""></Label> -->
+	<!-- <CheckBox text="{i18n>contentKM}" visible="{layouts>/SelectedLayout/ContentKM/Visible}" select="handleContentKMChange" id="idContentKM"></CheckBox>
+	<Label text=""/>
+	<VBox id="contentKmVbox" visible="{= ${appProperties>/ContentInKM} === 'X' &amp;&amp; ${layouts>/SelectedLayout/ContentKM/Visible}}" items="{default>/to_AFiles}">
+		<FlexBox alignItems="Center">
+			<Label text="{i18n>contentKMlink}:" required="true" id="idLinkLabel" class="sapUiTinyMarginEnd"/>
+			<HBox>
+				<Input value="{default>FileName}" valueStateText="{i18n>contentKMName}" liveChange="handleDateMethodChange" placeholder="{i18n>displayName}">
+					<customData>
+						<core:CustomData key="{default>/LinkId}" value="{default>/LinkId}"></core:CustomData>
+					</customData>
+				</Input>
+				<Input value="{default>Url}" class="sapUiTinyMarginBegin" valueStateText="{i18n>contentKMlink}" liveChange="handleDateMethodChange" placeholder="{i18n>enterLink}">
+					<customData>
+						<core:CustomData key="{default>/LinkId}" value="{default>/LinkId}"></core:CustomData>
+					</customData>
+				</Input>
+				<Button icon="sap-icon://sys-minus" class="sapUiTinyMarginBegin" type="Transparent" press="handleRemoveCvaLink" visible="{= ${default>Status} !== 'X'}" tooltip="Remove"></Button>
+				<Button icon="sap-icon://sys-add" class="sapUiTinyMarginBegin" type="Transparent" press="handleAddLinkPress" visible="{= ${default>Status} === 'X'}" tooltip="Add"></Button>
+			</HBox>
+		</FlexBox>
+	</VBox> -->
+	<!--content in KM checkbox end-->
+	<!--CVA Fields end-->
+	<!-- <Label text="{/#Yc_Mac_T_Act_MainType/ProjectId/@sap:label}" visible="{layouts>/SelectedLayout/ProjectType/Visible}"></Label>
+	<ComboBox id="hscProjectTypeSel" selectedKey="{default>/ProjectId}" enabled="{= ${default>/Authorized} ==='' || ${appProperties>/authFlag} === 'X'}" value="{default>/ProjectDesc}" items="{path: 'masterDataModel>/YC_MAC_M_PROJ_TYPE',sorter:{path:'ProjectDesc'}}" visible="{layouts>/SelectedLayout/ProjectType/Visible}" placeholder="{i18n>projectType}" change="handleChange" valueStateText="{/#Yc_Mac_T_Act_MainType/ProjectId/@sap:label}" busy="{path:'masterDataModel>/YC_MAC_M_PROJ_TYPE',formatter:'.formatter.setFieldBusyIndicator'}">
+		<core:Item text="{masterDataModel>ProjectDesc}" key="{masterDataModel>ProjectId}"></core:Item>
+	</ComboBox>
+	<Label text="{/#Yc_Mac_T_Act_MainType/HostTypeId/@sap:label}" visible="{layouts>/SelectedLayout/HostType/Visible}"></Label>
+	<ComboBox id="hscHostingTypeSel" selectedKey="{default>/HostTypeId}" enabled="{= ${default>/Authorized} !=='' || ${appProperties>/authFlag} === 'X'}" value="{default>/HostTypeDesc}" items="{path: 'masterDataModel>/YC_MAC_M_HOST_TYPE',sorter:{path:'HostTypeDesc'}}" visible="{layouts>/SelectedLayout/HostType/Visible}" placeholder="{i18n>hostType}" change="handleChange" valueStateText="{/#Yc_Mac_T_Act_MainType/HostTypeId/@sap:label}" busy="{path:'masterDataModel>/YC_MAC_M_HOST_TYPE',formatter:'.formatter.setFieldBusyIndicator'}">
+		<core:Item text="{masterDataModel>HostTypeDesc}" key="{masterDataModel>HostTypeId}"></core:Item>
+	</ComboBox>
+	<Label text="{/#Yc_Mac_T_Act_MainType/UseCaseId/@sap:label}" visible="{layouts>/SelectedLayout/UseCase/Visible}"></Label>
+	<ComboBox id="hscUseCaseSel" selectedKey="{default>/UseCaseId}" busy="{path:'masterDataModel>/YC_MAC_M_USE_CASE',formatter:'.formatter.setFieldBusyIndicator'}" enabled="{= ${default>/Authorized} !=='' || ${appProperties>/authFlag} === 'X'}" items="{path: 'masterDataModel>/YC_MAC_M_USE_CASE',sorter:{path:'UseCase'}}" value="{default>/UseCase}" visible="{layouts>/SelectedLayout/UseCase/Visible}" placeholder="{i18n>useCase}" change="handleChange" valueStateText="{/#Yc_Mac_T_Act_MainType/UseCaseId/@sap:label}">
+		<core:Item text="{masterDataModel>UseCase}" key="{masterDataModel>UseCaseId}"></core:Item>
+	</ComboBox>
+	<Label text="{/#Yc_Mac_T_Act_MainType/DeliveryTeamId/@sap:label}" visible="{= ${layouts>/SelectedLayout/DelTeam/Visible} &amp;&amp; ${appProperties>/authFlag} === 'X'}"></Label>
+	<ComboBox id="hscDeliveryTeamSel" selectedKey="{default>/DeliveryTeamId}" enabled="{= ${default>/Authorized} !=='' || ${appProperties>/authFlag} === 'X'}" value="{default>/DeliveryTeam}" items="{path:'masterDataModel>/YC_MAC_M_DELV_TEAM',sorter:{path:'DelTeam'}, filters:[{ path:'ActivityTypeId', operator:'EQ', value1:'0014' }]}" visible="{= ${layouts>/SelectedLayout/DelTeam/Visible} &amp;&amp; ${appProperties>/authFlag} === 'X'}" placeholder="{i18n>deliveryTeam}" change="handleChange" valueStateText="{/#Yc_Mac_T_Act_MainType/DeliveryTeamId/@sap:label}" busy="{path:'masterDataModel>/YC_MAC_M_DELV_TEAM',formatter:'.formatter.setFieldBusyIndicator'}">
+		<core:Item text="{masterDataModel>DelTeam}" key="{masterDataModel>DelTeamId}"></core:Item>
+	</ComboBox>
+	<Label text="{/#Yc_Mac_T_Act_MainType/VendorId/@sap:label}" visible="{= ${layouts>/SelectedLayout/Vendor/Visible} &amp;&amp; ${appProperties>/authFlag} === 'X'}"></Label>
+	<ComboBox id="hscPreferredVendorSel" selectedKey="{default>/VendorId}" enabled="{= ${default>/Authorized} !=='' || ${appProperties>/authFlag} === 'X'}" value="{default>/VendorDesc}" items="{path:'masterDataModel>/YC_MAC_M_VENDOR' ,sorter:{path:'VendorDesc'}, filters:[{ path:'ActivityTypeId', operator:'EQ', value1:'0014' }]}" visible="{= ${layouts>/SelectedLayout/Vendor/Visible} &amp;&amp; ${appProperties>/authFlag} === 'X'}" placeholder="{i18n>preferredVendor}" change="handleChange" valueStateText="{/#Yc_Mac_T_Act_MainType/VendorId/@sap:label}" busy="{path:'masterDataModel>/YC_MAC_M_VENDOR',formatter:'.formatter.setFieldBusyIndicator'}">
+		<core:Item text="{masterDataModel>VendorDesc}" key="{masterDataModel>VendorId}"></core:Item>
+	</ComboBox> -->
+	<!--END-->
+	<!--Technical Academy Request-->
+	<!-- <Label text="{/#Yc_Mac_T_Act_MainType/TAId/@sap:label}" required="true" visible="{layouts>/SelectedLayout/TAOption/Visible}"></Label>
+	<ComboBox id="taOptionsSel" selectedKey="{default>/TAId}" enabled="{= ${default>/Authorized} !=='' || ${appProperties>/authFlag} === 'X'}" value="{default>/TADesc}" items="{path:'masterDataModel>/YC_MAC_M_TA_OPT',filters:[{ path:'ActivityTypeId', operator:'EQ', value1:'0015' },{path:'OperationStatus', operator:'EQ', value1:'X'}]}" visible="{layouts>/SelectedLayout/TAOption/Visible}" placeholder="{i18n>TAOptions}" change="handleChange" valueStateText="{/#Yc_Mac_T_Act_MainType/TAId/@sap:label}" busy="{path:'masterDataModel>/YC_MAC_M_TA_OPT',formatter:'.formatter.setFieldBusyIndicator'}">
+		<core:Item text="{masterDataModel>TADesc}" key="{masterDataModel>TAId}"></core:Item>
+	</ComboBox>-->
+	<Label text="Engagement Type" required="true" visible="{layouts>/SelectedLayout/TAEngType/Visible}"></Label>
+	<ComboBox id="taEngagementTypeSel" selectedKey="{default>/EngTypeId}" enabled="{= ${default>/Authorized} !=='' || ${appProperties>/authFlag} === 'X'}" value="{default>/EngTypeDesc}" items="{path:'masterDataModel>/YC_MAC_M_ENG_TYPE', sorter:{path:'EngTypeDesc'}}" busy="{path:'masterDataModel>/YC_MAC_M_ENG_TYPE', formatter:'.formatter.setFieldBusyIndicator'}" visible="{layouts>/SelectedLayout/TAEngType/Visible}" placeholder="{i18n>engagementType}" change="handleEngTypeChange" valueStateText="{/#Yc_Mac_T_Act_MainType/EngTypeId/@sap:label}">
+		<core:Item text="{masterDataModel>EngTypeDesc}" key="{masterDataModel>EngTypeId}"></core:Item>
+	</ComboBox>
+	<!--VX Form fields-->
+	<!-- <Label text="Activity Name" required="true" visible="{layouts>/SelectedLayout/ActvtName/Visible}"/>
+	<Input id="detActivityName" value="{default>/ActvtName}" editable="true" placeholder="Enter an Activity Name" visible="{layouts>/SelectedLayout/ActvtName/Visible}" valueStateText="Enter an Activity Name" change="handleChange"/>
+	<Label text="Country" required="true" visible="{layouts>/SelectedLayout/CountryName/Visible}"/>
+	<ComboBox id="detCountry" selectedKey="{default>/CntryID}" enabled="true" items="{path:'registrationModel>/countryMaster', sorter:{path:'CountryName'}}" visible="{layouts>/SelectedLayout/CountryName/Visible}" placeholder="Select Country" change="handleChange" valueStateText="Select Country" busy="{path:'registrationModel>/countryMaster',formatter:'.formatter.setFieldBusyIndicator'}">
+		<core:Item text="{registrationModel>CountryName}" key="{registrationModel>CountryKey}"></core:Item>
+	</ComboBox>
+	<Label text="Number of Attendees" visible="{layouts>/SelectedLayout/NmbrOfAttnds/Visible}"/>
+	<Input id="detNoOfAttendees" value="{default>/NmbrOfAttnds}" editable="true" visible="{layouts>/SelectedLayout/NmbrOfAttnds/Visible}" type="Number" placeholder="Enter number of attendees" valueStateText="Enter number of attendees" change="handleChange"></Input>-->
+	<Label text="Preferred Data Center" required="true" visible="true"/>
+	<ComboBox id="idComboPreDataCenter" selectedKey="{default>/ImpactID}" enabled="true" items="{path:'masterDataModel>/YC_MAC_M_IMPACT',sorter:{path:'impact_description'}}" visible="true" placeholder="Select Preferred Data Center" change="handleChange" valueStateText="Select Impact" busy="{path:'masterDataModel>/YC_MAC_M_IMPACT',formatter:'.formatter.setFieldBusyIndicator'}">
+		<core:Item text="{masterDataModel>impact_description}" key="{masterDataModel>impact_id}"></core:Item>
+	</ComboBox>
+	<Label text="Number of Users" required="true" visible="true"/>
+	<ComboBox id="detImpact" selectedKey="{default>/ImpactID}" enabled="true" items="{path:'masterDataModel>/YC_MAC_M_IMPACT',sorter:{path:'impact_description'}}" visible="true" placeholder="Select Number Of Users" change="handleChange" valueStateText="Select Impact" busy="{path:'masterDataModel>/YC_MAC_M_IMPACT',formatter:'.formatter.setFieldBusyIndicator'}">
+		<core:Item text="{masterDataModel>impact_description}" key="{masterDataModel>impact_id}"></core:Item>
+	</ComboBox>
+	<!--VX Form fields-->
+	<!-- <Label text="{/#Yc_Mac_T_Act_MainType/PrefDCId/@sap:label}" visible="{layouts>/SelectedLayout/PrefDC/Visible}"></Label>
+	<ComboBox id="taPreferredDCSel" selectedKey="{default>/PrefDCId}" enabled="{= ${default>/Authorized} !=='' || ${appProperties>/authFlag} === 'X'}" value="{default>/PrefDC}" items="{path:'masterDataModel>/YC_MAC_M_DC_MASTER',sorter:{path:'PrefDC'}, filters:[{ path:'ActivityTypeId', operator:'EQ', value1:'0015'}]}" visible="{layouts>/SelectedLayout/PrefDC/Visible}" placeholder="{i18n>preferredDataCenter}" change="handleChange" valueStateText="{/#Yc_Mac_T_Act_MainType/PrefDCId/@sap:label}" busy="{path:'masterDataModel>/YC_MAC_M_DC_MASTER',formatter:'.formatter.setFieldBusyIndicator'}">
+		<core:Item text="{masterDataModel>PrefDC}" key="{masterDataModel>PrefDCId}"></core:Item>
+	</ComboBox>
+	<Label text="{i18n>academyTeamNumber}" visible="{= (${masterDataModel>/FormLayoutID} === '00015' &amp;&amp; ${default>/TAId} === '0028') ? true : false}" id="academyTeamLabel"></Label>
+	<Input placeholder="{i18n>academyTeamNumberPlaceHolder}" id="academyTeamNumber" visible="{= (${masterDataModel>/FormLayoutID} === '00015' &amp;&amp; ${default>/TAId} === '0028') ? true : false}" maxLength="2" value="{default>/NumberTeam}" liveChange="fnTeamUserChange"></Input>
+	<Label text="{= ${default>/TAId} === '0028' ? ${i18n>academyUserNumber} : ${/#Yc_Mac_T_Act_MainType/UserNumber/@sap:label}}" visible="{layouts>/SelectedLayout/UserNumber/Visible}" id="academyLabel"></Label>
+	<Input placeholder="{= ${default>/TAId} === '0028' ? ${i18n>academyUserNumberPlaceHolder} : ${i18n>userNumberPlaceHolder}}" id="UserNumber" visible="{layouts>/SelectedLayout/UserNumber/Visible}" maxLength="2" value="{default>/UserNumber}" liveChange="fnTeamUserChange" editable="{= ${default>/EngTypeId} !=='0008'}"></Input> -->
+	<!--END-->
+	<!--HSC Sizing Request-->
+	<!-- <Label text="{/#Yc_Mac_T_Act_MainType/CurrentSize/@sap:label}" visible="{= ${layouts>/SelectedLayout/CurrentSize/Visible} &amp;&amp; ${appProperties>/authFlag} === 'X'}"></Label>
+	<Input id="hscCurrentSizeInput" value="{= parseInt(${default>/CurrentSize})}" editable="{= ${default>/Authorized} !=='' || ${appProperties>/authFlag} === 'X'}" type="Number" visible="{= ${layouts>/SelectedLayout/CurrentSize/Visible} &amp;&amp; ${appProperties>/authFlag} === 'X'}" placeholder="{i18n>currentSize}" change="calculateCompressionFactor" valueStateText="{/#Yc_Mac_T_Act_MainType/CurrentSize/@sap:label}"></Input>
+	<Label text="{/#Yc_Mac_T_Act_MainType/RecommendedSize/@sap:label}" visible="{= ${layouts>/SelectedLayout/RecommendedSize/Visible} &amp;&amp; ${appProperties>/authFlag} === 'X'}"></Label>
+	<Input id="hscRecommendedSizeInput" value="{= parseInt(${default>/RecommendedSize})}" editable="{= ${default>/Authorized} !=='' || ${appProperties>/authFlag} === 'X'}" type="Number" visible="{= ${layouts>/SelectedLayout/RecommendedSize/Visible} &amp;&amp; ${appProperties>/authFlag} === 'X'}" placeholder="{i18n>recomendedSize}" change="calculateCompressionFactor" valueStateText="{/#Yc_Mac_T_Act_MainType/RecommendedSize/@sap:label}"></Input>
+	<Label text="Compression Factor" visible="{= ${layouts>/SelectedLayout/CompressionFactor/Visible} &amp;&amp; ${appProperties>/authFlag} === 'X'}"></Label>
+	<Input id="compressionFactor" value="{= (parseInt(${default>/CurrentSize}) / parseInt(${default>/RecommendedSize})).toFixed(2)}" visible="{= ${layouts>/SelectedLayout/CompressionFactor/Visible} &amp;&amp; ${appProperties>/authFlag} === 'X'}" editable="false"></Input> -->
+	<!--END-->
+	<!-- <Label text="{/#Yc_Mac_T_Act_MainType/HSCDesc/@sap:label}" visible="{= ${layouts>/SelectedLayout/HSCDesc/Visible} &amp;&amp; ${appProperties>/authFlag} === 'X'}"></Label>
+	<TextArea visible="{= ${layouts>/SelectedLayout/HSCDesc/Visible} &amp;&amp; ${appProperties>/authFlag} === 'X'}" value="{default>/HSCDesc}" enabled="{= ${default>/Authorized} ==='' || ${appProperties>/authFlag} === 'X'}" change="handleChange" maxLength="{path:'/#Yc_Mac_T_Act_MainType/HSCDesc/@maxLength',formatter:'.formatter.toInteger'}" rows="8"></TextArea>
+	<Label text="Audience" required="true" visible="{= ${layouts>/SelectedLayout/Audience/Visible}}"/>
+	<FlexBox alignItems="Start" justifyContent="Start" visible="{= ${layouts>/SelectedLayout/Audience/Visible}}" id="actDetAudience" items="{masterDataModel>/YC_MAC_M_AUDIENCE}">
+		<CheckBox text="{masterDataModel>AudienceDesc}" tooltip="{masterDataModel>AudienceDesc}" select="handleExeEngagement" name="{masterDataModel>AudienceID}" enabled="{= ${default>/Authorized} !==''}">
+			<layoutData>
+				<FlexItemData growFactor="1"/>
+			</layoutData>
+		</CheckBox>
+	</FlexBox> -->
+</core:FragmentDefinition>

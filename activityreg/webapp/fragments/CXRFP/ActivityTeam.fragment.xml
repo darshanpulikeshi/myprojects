@@ -1,0 +1,82 @@
+<core:FragmentDefinition xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core" class="sapUiSizeCompact">
+    <!--Activity Lead-->
+    <Label id="idLabelActLead" text="ActivityLead" tooltip="ActivityLead" required="true" visible="{layouts>/SelectedLayout/ActLead/Visible}"></Label>
+    <Input showValueHelp="true" placeholder="{i18n>xtit.actLeadPlaceholderTxt}" valueHelpOnly="true" valueHelpRequest="openActivityLeadDialog" editable="{= ${default>/Authorized} !=='' || (${user>/CXRFP_User} ==='X' &amp;&amp; ${masterDataModel>/FormLayoutID} === '00012') || ((${masterDataModel>/FormLayoutID} === '00014' || ${masterDataModel>/FormLayoutID} === '00015' || ${masterDataModel>/FormLayoutID} === '00016') &amp;&amp; ${appProperties>/authFlag} === 'X') || (${masterDataModel>/FormLayoutID} === '00001' &amp;&amp; ${appProperties>/DemoEditAccess} === 'X')}" id="leadInput" value="{opportunityModel>/selectedOpportunityTeam/PRESALES_LEAD/NAME}" change="handleChange" valueStateText="Activity Lead" visible="{layouts>/SelectedLayout/ActLead/Visible}">
+        <customData>
+            <core:CustomData key="actLead" value="{opportunityModel>/selectedOpportunityTeam/PRESALES_LEAD/ID}"></core:CustomData>
+        </customData>
+    </Input>
+    <!--Activity Lead-->
+    <Label id="idLabelAccExecutive" text="AccountExecutive" tooltip="AccountExecutive" visible="{layouts>/SelectedLayout/AccountExecutive/Visible}" required="{=${masterDataModel>/FormLayoutID} === '00026'? true:false}"></Label>
+    <HBox id="idLabelHboxAccExecutive" class="switchAlignment" visible="{layouts>/SelectedLayout/AccountExecutive/Visible}" alignContent="Stretch">
+        <Input showValueHelp="true" width="24rem" valueHelpOnly="true" placeholder="{i18n>xtit.accountExecPlaceholderTxt}" id="accountExecutive" valueStateText="Account Executive" valueHelpRequest="handleUserSearchSingle" change="handleChange" value="{opportunityModel>/selectedOpportunityTeam/ACCOUNT_EXECUTIVE/NAME}" editable="{= ${default>/Authorized} !=='' || ${user>/CXRFP_User} ==='X' || (${masterDataModel>/FormLayoutID} === '00001' &amp;&amp; ${appProperties>/DemoEditAccess} === 'X')}">
+            <customData>
+                <core:CustomData key="actExec" value="{opportunityModel>/selectedOpportunityTeam/ACCOUNT_EXECUTIVE/ID}"></core:CustomData>
+            </customData>
+        </Input>
+        <core:Icon src="sap-icon://sys-cancel" color="red" class="alignTeamDeleteIcon" press="deleteActTeamSingle" visible="{path:'opportunityModel>/selectedOpportunityTeam/ACCOUNT_EXECUTIVE/ID',formatter:'.formatter.showUserDeleteIcon'}">
+            <core:customData>
+                <core:CustomData key="actExecPath" value="/selectedOpportunityTeam/ACCOUNT_EXECUTIVE"></core:CustomData>
+            </core:customData>
+        </core:Icon>
+    </HBox>
+    <!--executive sponser start-->
+    <Label id="idLabelTeam" text="{i18n>xtit.pcTeam}" required="{= ${masterDataModel>/FormLayoutID} === '00026' ? true:false}" tooltip="{i18n>xtit.pcTeam}" visible="{layouts>/SelectedLayout/ActTeam/Visible}"></Label>
+    <MultiInput id="idMultiComboInputTeam" placeholder="{i18n>xtit.actTeamPlaceholderTxt}" valueHelpRequest="handleCRMUserSearchMulti" editable="{= ${default>/Authorized} !=='' || ${user>/CXRFP_User} ==='X'|| (${masterDataModel>/FormLayoutID} === '00001' &amp;&amp; ${appProperties>/DemoEditAccess} === 'X')}" tokens="{path:'opportunityModel>/selectedOpportunityTeam/PRESALES_TEAM'}" tokenUpdate="onTokenUpdate" valueHelpOnly="true" valueStateText="Activity Team" visible="{layouts>/SelectedLayout/ActTeam/Visible}">
+        <customData>
+            <core:CustomData key="actTeam" value="ActTeam"></core:CustomData>
+        </customData>
+        <tokens>
+            <Token key="{opportunityModel>ID}" text="{= (${opportunityModel>ROLE_DESC} === '' || ${opportunityModel>ROLE_DESC} === undefined) ? ${opportunityModel>NAME} : ${opportunityModel>NAME} + ' - ' + ${opportunityModel>ROLE_DESC} + ' '}"></Token>
+        </tokens>
+    </MultiInput>
+    <!-- <Label text="{i18n>executivesponsor}" tooltip="{i18n>executivesponsor}" visible="{layouts>/SelectedLayout/Executivesponsor/Visible}"></Label>
+    <MultiInput placeholder="{i18n>executivesponsorplcldr}" valueHelpRequest="handleUserSearchMulti" editable="{= ${default>/Authorized} !=='' || ${user>/CXRFP_User} ==='X'|| (${masterDataModel>/FormLayoutID} === '00001' &amp;&amp; ${appProperties>/DemoEditAccess} === 'X')}" id="executiveSponcerInput" tokens="{path:'opportunityModel>/selectedOpportunityTeam/EXECUTIVE_SPONSOR'}" tokenUpdate="onTokenUpdate" valueHelpOnly="true" valueStateText="Activity Team" visible="{layouts>/SelectedLayout/Executivesponsor/Visible}">
+        <customData>
+            <core:CustomData key="actTeam" value="ActTeam"></core:CustomData>
+        </customData>
+        <tokens>
+            <Token key="{opportunityModel>ID}" text="{opportunityModel>NAME}"></Token>
+        </tokens>
+    </MultiInput> -->
+    <!--executive sponcer end-->
+    <Label text="{i18n>resourceManagers}" visible="true"></Label>
+    <MultiInput visible="{layouts>/SelectedLayout/ResourceManager/Visible}" placeholder="{i18n>resourceManagerPlaceholder}" valueHelpRequest="handleUserSearchMulti" editable="{= (${default>/Authorized} !=='' || ${user>/CXRFP_User} ==='X') &amp;&amp; ${appProperties>/isEditMode}}" tokenUpdate="onTokenUpdate" id="idResourceManager" valueHelpOnly="false" tokens="{path:'opportunityModel>/selectedOpportunityTeam/RESOURCE_MANAGER'}">
+        <customData>
+            <core:CustomData key="ResourceManager" value="ResourceManager"></core:CustomData>
+        </customData>
+        <tokens>
+            <Token key="{opportunityModel>ID}" text="{opportunityModel>NAME}" delete="handleDeleteResourceManagers"></Token>
+        </tokens>
+    </MultiInput>
+    <!--HSC Team-->
+    <!-- <Label text="{i18n>actHSCTeamLbl}" required="false" tooltip="{i18n>xtit.pcTeam}" visible="{layouts>/SelectedLayout/HSCTeam/Visible}"></Label>
+    <MultiInput placeholder="{i18n>xtit.actTeamPlaceholderTxt}" valueHelpRequest="handleCRMUserSearchMulti" editable="{= ${default>/Authorized} !=='' || (${user>/CXRFP_User} ==='X' &amp;&amp; ${masterDataModel>/FormLayoutID} === '00012') || ((${masterDataModel>/FormLayoutID} === '00014' || ${masterDataModel>/FormLayoutID} === '00015' || ${masterDataModel>/FormLayoutID} === '00016') &amp;&amp; ${appProperties>/authFlag} === 'X')}" id="hscTeam" tokens="{path:'opportunityModel>/selectedOpportunityTeam/HSC_TEAM'}" tokenUpdate="onTokenUpdate" valueHelpOnly="true" valueStateText="Activity Team" visible="{layouts>/SelectedLayout/HSCTeam/Visible}">
+        <customData>
+            <core:CustomData key="HSCTeam" value="HSC_TEAM"></core:CustomData>
+        </customData>
+        <tokens>
+            <Token key="{opportunityModel>ID}" text="{= (${opportunityModel>ROLE_DESC} === '' || ${opportunityModel>ROLE_DESC} === undefined) ? ${opportunityModel>NAME} : ${opportunityModel>NAME} + ' - ' + ${opportunityModel>ROLE_DESC} + ' '}"></Token>
+        </tokens>
+    </MultiInput> -->
+    <!--END Team Fields for HSC-->
+    <!-- <Label text="{/#Yc_Mac_T_Act_MainType/SurveyRecpt/@sap:label}" required="true" visible="{= ${default>/Status} === '12' &amp;&amp; ${layouts>/SelectedLayout/DemoSurveyRecpt/Visible}}"></Label>
+    <Select items="{masterDataModel>/demoSurveyRecpt}" id="demoSurveyRecptSelect" change="handleChange" enabled="{= ${default>/Authorized} !=='' || ((${masterDataModel>/FormLayoutID} === '00001' || ${masterDataModel>/FormLayoutID} === '00024') &amp;&amp; ${appProperties>/DemoEditAccess} === 'X')}" visible="{= ${default>/Status} === '12' &amp;&amp; ${layouts>/SelectedLayout/DemoSurveyRecpt/Visible}}" selectedKey="{parts:[{path:'default>/ActivityLead'},{path:'default>/SurveyRecpt'}],formatter:'.formatter.selectDemoSurveyRecpt'}">
+        <core:Item text="{masterDataModel>name}" key="{masterDataModel>ID}"></core:Item>
+    </Select> -->
+    <!--Updates to the Demo form #300-->
+    <!-- <Label text="{i18n>routeToMarket}" required="{layouts>/SelectedLayout/RouteToMarket/Required}" visible="{=${layouts>/SelectedLayout/RouteToMarket/Visible}?true:false}" class="sapUiLargeMarginTop"/>
+    <FlexBox alignItems="Start" justifyContent="Start" visible="{= ${layouts>/SelectedLayout/RouteToMarket/Visible}? true:false}" id="routeToMarket" items="{masterDataModel>/YC_MAC_M_ROUTE_MARKET}" class="sapUiLargeMarginTop">
+        <CheckBox text="{masterDataModel>route_mrkt_desc}" tooltip="{masterDataModel>route_mrkt_id}" select="handleRouteToMarketSelect" name="{masterDataModel>route_mrkt_id}" enabled="{= ${default>/Authorized} !==''}">
+            <layoutData>
+                <FlexItemData growFactor="1"/>
+            </layoutData>
+        </CheckBox>
+    </FlexBox>
+    <Label text="{i18n>serviceRequested}" required="{layouts>/SelectedLayout/ServiceRequested/Required}" visible="{=${layouts>/SelectedLayout/ServiceRequested/Visible}?true:false}"/>
+    <MultiComboBox id="serviceRequested" visible="{=${layouts>/SelectedLayout/ServiceRequested/Visible}?true:false}" placeholder="{i18n>selServiceRequested}" items="{path:'masterDataModel>/YC_MAC_M_SRV_REQUESTED',sorter:{path:'SrvReqstDesc'}}" selectionFinish="handleServiceRequestedChange" valueStateText="{i18n>serviceRequested}">
+        <core:Item text="{masterDataModel>SrvReqstDesc}" key="{masterDataModel>SrvReqstId}"/>
+    </MultiComboBox> -->
+</core:FragmentDefinition>

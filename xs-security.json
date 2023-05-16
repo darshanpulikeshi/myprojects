@@ -6,15 +6,31 @@
     {
       "name": "uaa.user",
       "description": "UAA"
+    },
+    {
+      "name": "$XAPPNAME.user",
+      "description": "UAA user"
+    },
+    {
+      "name": "$XAPPNAME.approver",
+      "description": "UAA approver"
     }
   ],
   "role-templates": [
     {
       "name": "Token_Exchange",
       "description": "UAA",
-      "scope-references": [
-        "uaa.user"
-      ]
+      "scope-references": ["uaa.user"]
+    },
+    {
+      "name": "POC_MELODY_APPROVER",
+      "description": "UAA POC_MELODY_APPROVER",
+      "scope-references": ["$XAPPNAME.approver"]
+    },
+    {
+      "name": "POC_MELODY_USER",
+      "description": "UAA POC_MELODY_USER",
+      "scope-references": ["$XAPPNAME.user"]
     }
   ]
 }

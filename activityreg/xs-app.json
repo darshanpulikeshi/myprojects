@@ -26,6 +26,20 @@
       "target": "$1",
       "service": "html5-apps-repo-rt",
       "authenticationType": "xsuaa"
+    },
+    {
+      "source": "^/catalog(.*)$",
+      "target": "/catalog$1",
+      "destination": "srv_api",
+      "authenticationType": "xsuaa",
+      "scope": {
+        "GET": ["$XSAPPNAME.approver", "$XSAPPNAME.user"],
+        "PATCH": ["$XSAPPNAME.approver", "$XSAPPNAME.user"],
+        "POST": ["$XSAPPNAME.approver", "$XSAPPNAME.user"],
+        "PUT": ["$XSAPPNAME.approver", "$XSAPPNAME.user"],
+        "DELETE": ["$XSAPPNAME.approver", "$XSAPPNAME.user"],
+        "default": ["$XSAPPNAME.approver", "$XSAPPNAME.user"]
+      }
     }
   ]
 }

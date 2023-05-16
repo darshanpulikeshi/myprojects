@@ -4,12 +4,12 @@ sap.ui.define(
     "use strict";
 
     return BaseController.extend(
-      "com.test.activityreg.controller.ActivityRegistration",
+      "com.test.activityreg.controller.CXRFP",
       {
         onInit: function () {
           let oRouter = sap.ui.core.UIComponent.getRouterFor(this);
           oRouter
-            .getRoute("ActivityRegistration")
+            .getRoute("CXRFP")
             .attachMatched(this._onRouteMatched, this);
         },
 
