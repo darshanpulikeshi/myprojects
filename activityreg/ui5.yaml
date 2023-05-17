@@ -30,3 +30,7 @@ server:
       configuration:
         component: com.test.activityreg
         ui5Theme: sap_horizon
+builder:
+  resources:
+    excludes:
+      - "/library/**"

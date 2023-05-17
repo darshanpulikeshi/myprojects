@@ -23,7 +23,7 @@
             </form:SimpleForm>
             <form:SimpleForm id="idFormActivityDetail" editable="true" layout="ResponsiveGridLayout" labelSpanXL="4" labelSpanL="4" labelSpanM="12" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="0" emptySpanL="0" emptySpanM="0" emptySpanS="0" columnsXL="3" columnsL="2" columnsM="2" singleContainerFullSize="false" maxContainerCols="2">
                 <form:content>
-                    <core:Title text="{= (${default>/ActivityTypeId} !== '0124' &amp;&amp; ${default>/ActivityTypeId} !== '0014' &amp;&amp; ${default>/ActivityTypeId} !== '0016')||((${default>/ActivityTypeId} === '0014' || ${default>/ActivityTypeId} === '0016') &amp;&amp; ${appProperties>/authFlag} === 'X') ? ${i18n>xtit.actDetailsTitle} : ''}" tooltip="{i18n>xtit.actDetailsTitle}" id="idActDetailTitle">
+                     <core:Title text="Activity Details" tooltip="{i18n>xtit.actDetailsTitle}" id="idActDetailTitle">
                         <core:customData>
                             <core:CustomData key="{parts:[{path:'default>/ActivityTypeId'},{path:'i18n>xtit.actDetailsTitle'}],formatter:'.formatter.assignCustomData'}" value="test" writeToDom="true"/>
                         </core:customData>

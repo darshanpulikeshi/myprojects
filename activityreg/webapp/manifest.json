@@ -72,8 +72,14 @@
         "sap.ui.comp": {},
         "sap.ui.generic.app": {},
         "sap.ui.table": {},
-        "sap.ushell": {}
+        "sap.ushell": {},
+        "com.myorg.melodytools": {
+          "minVersion": "Active"
+        }
       }
+    },
+    "resourceRoots": {
+      "com.myorg.melodytools": "./library/com.myorg.melodytools/src/com/myorg/melodytools/"
     },
     "contentDensities": {
       "compact": true,

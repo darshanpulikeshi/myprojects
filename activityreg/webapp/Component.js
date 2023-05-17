@@ -1,3 +1,4 @@
+$.sap.registerModulePath("com.myorg.melodytools", "./library/com.myorg.melodytools/src/com/myorg/melodytools/");
 /**
  * eslint-disable @sap/ui5-jsdocs/no-jsdoc
  */

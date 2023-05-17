@@ -1,0 +1,5423 @@
+{
+	"Layouts": [{
+			"LayoutId": "00001",
+			"Fields": {
+				"EventTitle": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"Account": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"OpportunityNumber": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"AdditionalOpp": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"StartDate": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"EndDate": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"HSCRegion": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"DryRunDate": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				},
+				"DiscoveryCompleted": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				},
+				"TopDeal": {
+					"Visible": true,
+					"Required": false,
+					"Enable": false
+				},
+				"Scripted": {
+					"Visible": true,
+					"Required": false,
+					"Enable": false
+				},
+				"CustomerDays": {
+					"Visible": false,
+					"Required": false,
+					"Enable": false
+				},
+				"CustomerHours": {
+					"Visible": false,
+					"Required": false,
+					"Enable": false
+				},
+				"RequestedDelivery": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Description": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				},
+				"SupplyChain": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"CXRFPSol": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ActvtStatus": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ExistingClient": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"Security": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"EaEngagementStatus": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+
+				"ActDetailType": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"SalesLOB": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"BsnsAreaEngd": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Method": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"VirtualStudio": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"BoardRoomNumber": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"StrategicAreaType": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"AdditionalSolutions": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"CrossTopic": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"Scope": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"VxMainSolution": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"IncrPipeline": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"BPSMEAlign": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"CustomerEngLevel": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Status": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Phases": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ContentKM": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"EARegion": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"SCPAccount": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"PotentialCloseDate": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"TargetValue": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ProjectType": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"HostType": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"UseCase": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"DelTeam": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Vendor": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"TAOption": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"TAEngType": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ActvtName": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"CountryName": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"NmbrOfAttnds": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Impact": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"PrefDC": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"UserNumber": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"CurrentSize": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"RecommendedSize": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"CompressionFactor": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"HSCDesc": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Audience": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+
+				"ActLead": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"ActSupport": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"ActManager": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"AccountExecutive": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"AccountOwner": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Executivesponsor": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ResourceManager": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"PCSM": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				},
+				"ActTeam": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"EACSD": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"EAGAD": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"EAIAE": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"EADIR": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"EAIVE": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"RequestorManager": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"HSCTeam": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"DemoSurveyRecpt": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"ActivityRisk": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				},
+				"CompleteActions": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"Deliverables": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"Comments": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"EaFileAttchmnt": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				}
+			}
+		}, {
+			"LayoutId": "00003",
+			"Fields": {
+				"EventTitle": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Account": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"OpportunityNumber": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"AdditionalOpp": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"StartDate": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"EndDate": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"HSCRegion": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"DryRunDate": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"DiscoveryCompleted": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"TopDeal": {
+					"Visible": false,
+					"Required": false,
+					"Enable": false
+				},
+				"Scripted": {
+					"Visible": false,
+					"Required": false,
+					"Enable": false
+				},
+				"CustomerDays": {
+					"Visible": false,
+					"Required": false,
+					"Enable": false
+				},
+				"CustomerHours": {
+					"Visible": false,
+					"Required": false,
+					"Enable": false
+				},
+				"RequestedDelivery": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Description": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				},
+				"SupplyChain": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"CXRFPSol": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ActvtStatus": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ExistingClient": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"Security": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"EaEngagementStatus": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+
+				"ActDetailType": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"SalesLOB": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"BsnsAreaEngd": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"Method": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"VirtualStudio": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"BoardRoomNumber": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"StrategicAreaType": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"AdditionalSolutions": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"CrossTopic": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Scope": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"VxMainSolution": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"IncrPipeline": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"BPSMEAlign": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"CustomerEngLevel": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Status": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Phases": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ContentKM": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"EARegion": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"SCPAccount": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"PotentialCloseDate": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"TargetValue": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ProjectType": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"HostType": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"UseCase": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"DelTeam": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Vendor": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"TAOption": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"TAEngType": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ActvtName": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"CountryName": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"NmbrOfAttnds": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Impact": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"PrefDC": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"UserNumber": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"CurrentSize": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"RecommendedSize": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"CompressionFactor": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"HSCDesc": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Audience": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+
+				"ActLead": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"ActSupport": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ActManager": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"AccountExecutive": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"AccountOwner": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"Executivesponsor": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ResourceManager": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"PCSM": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"ActTeam": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"EACSD": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"EAGAD": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"EAIAE": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"EADIR": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"EAIVE": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"RequestorManager": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"HSCTeam": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"DemoSurveyRecpt": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ActivityRisk": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				},
+				"CompleteActions": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"Deliverables": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"Comments": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"EaFileAttchmnt": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				}
+			}
+
+		}, {
+			"LayoutId": "00005",
+			"Fields": {
+				"EventTitle": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"Account": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"OpportunityNumber": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"AdditionalOpp": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"StartDate": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"EndDate": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"HSCRegion": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"DryRunDate": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"DiscoveryCompleted": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"TopDeal": {
+					"Visible": false,
+					"Required": false,
+					"Enable": false
+				},
+				"Scripted": {
+					"Visible": false,
+					"Required": false,
+					"Enable": false
+				},
+				"CustomerDays": {
+					"Visible": false,
+					"Required": false,
+					"Enable": false
+				},
+				"CustomerHours": {
+					"Visible": false,
+					"Required": false,
+					"Enable": false
+				},
+				"RequestedDelivery": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Description": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				},
+				"SupplyChain": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"CXRFPSol": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ActvtStatus": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ExistingClient": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"Security": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"EaEngagementStatus": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"ActDetailType": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"SalesLOB": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"BsnsAreaEngd": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"Method": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"VirtualStudio": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"BoardRoomNumber": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"StrategicAreaType": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"AdditionalSolutions": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"CrossTopic": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Scope": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"VxMainSolution": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"IncrPipeline": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				},
+				"BPSMEAlign": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"CustomerEngLevel": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Status": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Phases": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ContentKM": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				},
+				"EARegion": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"SCPAccount": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"PotentialCloseDate": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"TargetValue": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ProjectType": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"HostType": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"UseCase": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"DelTeam": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Vendor": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"TAOption": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"TAEngType": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ActvtName": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"CountryName": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"NmbrOfAttnds": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Impact": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"PrefDC": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"UserNumber": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"CurrentSize": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"RecommendedSize": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"CompressionFactor": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"HSCDesc": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Audience": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+
+				"ActLead": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"ActSupport": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ActManager": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"AccountExecutive": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"AccountOwner": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				},
+				"Executivesponsor": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"ResourceManager": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"PCSM": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				},
+				"ActTeam": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				},
+				"EACSD": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"EAGAD": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"EAIAE": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"EADIR": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"EAIVE": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"RequestorManager": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"HSCTeam": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"DemoSurveyRecpt": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ActivityRisk": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				},
+				"CompleteActions": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"Deliverables": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"Comments": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				},
+				"EaFileAttchmnt": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				}
+
+			}
+
+		}, {
+			"LayoutId": "00006",
+			"Fields": {
+				"EventTitle": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"Account": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"OpportunityNumber": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				},
+				"AdditionalOpp": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"StartDate": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"EndDate": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"HSCRegion": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"DryRunDate": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"DiscoveryCompleted": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"TopDeal": {
+					"Visible": false,
+					"Required": false,
+					"Enable": false
+				},
+				"Scripted": {
+					"Visible": false,
+					"Required": false,
+					"Enable": false
+				},
+				"CustomerDays": {
+					"Visible": false,
+					"Required": false,
+					"Enable": false
+				},
+				"CustomerHours": {
+					"Visible": false,
+					"Required": false,
+					"Enable": false
+				},
+				"RequestedDelivery": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Description": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				},
+				"SupplyChain": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"CXRFPSol": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ActvtStatus": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ExistingClient": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"Security": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"EaEngagementStatus": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"ActDetailType": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"SalesLOB": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"BsnsAreaEngd": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"Method": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"VirtualStudio": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"BoardRoomNumber": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"StrategicAreaType": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"AdditionalSolutions": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"CrossTopic": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Scope": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"VxMainSolution": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"IncrPipeline": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				},
+				"BPSMEAlign": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"CustomerEngLevel": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Status": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Phases": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ContentKM": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				},
+				"EARegion": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"SCPAccount": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"PotentialCloseDate": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"TargetValue": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ProjectType": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"HostType": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"UseCase": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"DelTeam": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Vendor": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"TAOption": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"TAEngType": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ActvtName": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"CountryName": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"NmbrOfAttnds": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Impact": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"PrefDC": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"UserNumber": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"CurrentSize": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"RecommendedSize": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"CompressionFactor": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"HSCDesc": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Audience": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ActLead": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+
+				"ActSupport": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ActManager": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"AccountExecutive": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"AccountOwner": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				},
+				"Executivesponsor": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"ResourceManager": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"PCSM": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"ActTeam": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				},
+				"EACSD": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"EAGAD": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"EAIAE": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"EADIR": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"EAIVE": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"RequestorManager": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"HSCTeam": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"DemoSurveyRecpt": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ActivityRisk": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				},
+				"CompleteActions": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"Deliverables": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"Comments": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				},
+				"EaFileAttchmnt": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				}
+
+			}
+
+		}, {
+			"LayoutId": "00012",
+			"Fields": {
+				"EventTitle": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"Account": {
+					"Visible": true,
+					"Required": true,
+					"Enable": false
+				},
+				"OpportunityNumber": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"AdditionalOpp": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"StartDate": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"EndDate": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"HSCRegion": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"DryRunDate": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"DiscoveryCompleted": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"TopDeal": {
+					"Visible": false,
+					"Required": false,
+					"Enable": false
+				},
+				"Scripted": {
+					"Visible": false,
+					"Required": false,
+					"Enable": false
+				},
+				"CustomerDays": {
+					"Visible": false,
+					"Required": false,
+					"Enable": false
+				},
+				"CustomerHours": {
+					"Visible": false,
+					"Required": false,
+					"Enable": false
+				},
+				"RequestedDelivery": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"Description": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				},
+				"SupplyChain": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"CXRFPSol": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"ActvtStatus": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"ExistingClient": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				},
+				"Security": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				},
+				"EaEngagementStatus": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"ActDetailType": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"SalesLOB": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"BsnsAreaEngd": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Method": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"VirtualStudio": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"BoardRoomNumber": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"StrategicAreaType": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"AdditionalSolutions": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"CrossTopic": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Scope": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"VxMainSolution": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"IncrPipeline": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"BPSMEAlign": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"CustomerEngLevel": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Status": {
+					"Visible": false,
+					"Required": false,
+					"Enable": false
+				},
+				"Phases": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ContentKM": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"EARegion": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"SCPAccount": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"PotentialCloseDate": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"TargetValue": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ProjectType": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"HostType": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"UseCase": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"DelTeam": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Vendor": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"TAOption": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"TAEngType": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ActvtName": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"CountryName": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"NmbrOfAttnds": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Impact": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"PrefDC": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"UserNumber": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"CurrentSize": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"RecommendedSize": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"CompressionFactor": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"HSCDesc": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Audience": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ActLead": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+
+				"ActSupport": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ActManager": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"AccountExecutive": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				},
+				"AccountOwner": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"Executivesponsor": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"ResourceManager": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				},
+				"PCSM": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"ActTeam": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				},
+				"EACSD": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"EAGAD": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"EAIAE": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"EADIR": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"EAIVE": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"RequestorManager": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"HSCTeam": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"DemoSurveyRecpt": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ActivityRisk": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"CompleteActions": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"Deliverables": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				},
+				"Comments": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				},
+				"EaFileAttchmnt": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				}
+
+			}
+
+		}, {
+			"LayoutId": "00013",
+			"Fields": {
+				"EventTitle": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Account": {
+					"Visible": false,
+					"Required": true,
+					"Enable": false
+				},
+				"OpportunityNumber": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"AdditionalOpp": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"StartDate": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"EndDate": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"HSCRegion": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"DryRunDate": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"DiscoveryCompleted": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"TopDeal": {
+					"Visible": false,
+					"Required": false,
+					"Enable": false
+				},
+				"Scripted": {
+					"Visible": false,
+					"Required": false,
+					"Enable": false
+				},
+				"CustomerDays": {
+					"Visible": false,
+					"Required": false,
+					"Enable": false
+				},
+				"CustomerHours": {
+					"Visible": false,
+					"Required": false,
+					"Enable": false
+				},
+				"RequestedDelivery": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Description": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				},
+				"SupplyChain": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"CXRFPSol": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ActvtStatus": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ExistingClient": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"Security": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"EaEngagementStatus": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				},
+				"ActDetailType": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"SalesLOB": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"BsnsAreaEngd": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Method": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"VirtualStudio": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"BoardRoomNumber": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"StrategicAreaType": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"AdditionalSolutions": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"CrossTopic": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Scope": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"VxMainSolution": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"IncrPipeline": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"BPSMEAlign": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"CustomerEngLevel": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Status": {
+					"Visible": false,
+					"Required": false,
+					"Enable": false
+				},
+				"Phases": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ContentKM": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"EARegion": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"SCPAccount": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"PotentialCloseDate": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				},
+				"TargetValue": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				},
+				"ProjectType": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"HostType": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"UseCase": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"DelTeam": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Vendor": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"TAOption": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"TAEngType": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ActvtName": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"CountryName": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"NmbrOfAttnds": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Impact": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"PrefDC": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"UserNumber": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"CurrentSize": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"RecommendedSize": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"CompressionFactor": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"HSCDesc": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Audience": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ActLead": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+
+				"ActSupport": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ActManager": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"AccountExecutive": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"AccountOwner": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"Executivesponsor": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"ResourceManager": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"PCSM": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"ActTeam": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"EACSD": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"EAGAD": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"EAIAE": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"EADIR": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"EAIVE": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"RequestorManager": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"HSCTeam": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"DemoSurveyRecpt": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ActivityRisk": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"CompleteActions": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"Deliverables": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"Comments": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				},
+				"EaFileAttchmnt": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				}
+
+			}
+
+		}, {
+			"LayoutId": "00014",
+			"Fields": {
+				"EventTitle": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"Account": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"OpportunityNumber": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"AdditionalOpp": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"StartDate": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"EndDate": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"HSCRegion": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"DryRunDate": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"DiscoveryCompleted": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"TopDeal": {
+					"Visible": false,
+					"Required": false,
+					"Enable": false
+				},
+				"Scripted": {
+					"Visible": false,
+					"Required": false,
+					"Enable": false
+				},
+				"CustomerDays": {
+					"Visible": false,
+					"Required": false,
+					"Enable": false
+				},
+				"CustomerHours": {
+					"Visible": false,
+					"Required": false,
+					"Enable": false
+				},
+				"RequestedDelivery": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Description": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				},
+				"SupplyChain": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"CXRFPSol": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ActvtStatus": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ExistingClient": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"Security": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"EaEngagementStatus": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"ActDetailType": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"SalesLOB": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"BsnsAreaEngd": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"Method": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"VirtualStudio": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"BoardRoomNumber": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"StrategicAreaType": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"AdditionalSolutions": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"CrossTopic": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Scope": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"VxMainSolution": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				},
+				"IncrPipeline": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"BPSMEAlign": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"CustomerEngLevel": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Status": {
+					"Visible": false,
+					"Required": false,
+					"Enable": false
+				},
+				"Phases": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ContentKM": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				},
+				"EARegion": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"SCPAccount": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"PotentialCloseDate": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"TargetValue": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"ProjectType": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"HostType": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"UseCase": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"DelTeam": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Vendor": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"TAOption": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"TAEngType": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ActvtName": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"CountryName": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"NmbrOfAttnds": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Impact": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"PrefDC": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"UserNumber": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"CurrentSize": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"RecommendedSize": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"CompressionFactor": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"HSCDesc": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Audience": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ActLead": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+
+				"ActSupport": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ActManager": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"AccountExecutive": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				},
+				"AccountOwner": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				},
+				"Executivesponsor": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"ResourceManager": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"PCSM": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"ActTeam": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"EACSD": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"EAGAD": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"EAIAE": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"EADIR": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"EAIVE": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"RequestorManager": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"HSCTeam": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"DemoSurveyRecpt": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ActivityRisk": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				},
+				"CompleteActions": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"Deliverables": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"Comments": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"EaFileAttchmnt": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				}
+
+			}
+
+		}, {
+			"LayoutId": "00015",
+			"Fields": {
+				"EventTitle": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"Account": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"OpportunityNumber": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"AdditionalOpp": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"StartDate": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"EndDate": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"HSCRegion": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"DryRunDate": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"DiscoveryCompleted": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"TopDeal": {
+					"Visible": false,
+					"Required": false,
+					"Enable": false
+				},
+				"Scripted": {
+					"Visible": false,
+					"Required": false,
+					"Enable": false
+				},
+				"CustomerDays": {
+					"Visible": false,
+					"Required": false,
+					"Enable": false
+				},
+				"CustomerHours": {
+					"Visible": false,
+					"Required": false,
+					"Enable": false
+				},
+				"RequestedDelivery": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Description": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				},
+				"SupplyChain": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"CXRFPSol": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ActvtStatus": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ExistingClient": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"Security": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"EaEngagementStatus": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"ActDetailType": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"SalesLOB": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"BsnsAreaEngd": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Method": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"VirtualStudio": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"BoardRoomNumber": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"StrategicAreaType": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"AdditionalSolutions": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"CrossTopic": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Scope": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"VxMainSolution": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"IncrPipeline": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"BPSMEAlign": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"CustomerEngLevel": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Status": {
+					"Visible": false,
+					"Required": false,
+					"Enable": false
+				},
+				"Phases": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ContentKM": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"EARegion": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"SCPAccount": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"PotentialCloseDate": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"TargetValue": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"ProjectType": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"HostType": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"UseCase": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"DelTeam": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Vendor": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"TAOption": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"TAEngType": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"ActvtName": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"CountryName": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"NmbrOfAttnds": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Impact": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"PrefDC": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				},
+				"UserNumber": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				},
+				"CurrentSize": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"RecommendedSize": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"CompressionFactor": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"HSCDesc": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Audience": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ActLead": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+
+				"ActSupport": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ActManager": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"AccountExecutive": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				},
+				"AccountOwner": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"Executivesponsor": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"ResourceManager": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"PCSM": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"ActTeam": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"EACSD": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"EAGAD": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"EAIAE": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"EADIR": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"EAIVE": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"RequestorManager": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"HSCTeam": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"DemoSurveyRecpt": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ActivityRisk": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"CompleteActions": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"Deliverables": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"Comments": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"EaFileAttchmnt": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				}
+
+			}
+
+		}, {
+			"LayoutId": "00019",
+			"Fields": {
+				"EventTitle": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"Account": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"OpportunityNumber": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				},
+				"AdditionalOpp": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"StartDate": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"EndDate": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"HSCRegion": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"DryRunDate": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"DiscoveryCompleted": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"TopDeal": {
+					"Visible": false,
+					"Required": false,
+					"Enable": false
+				},
+				"Scripted": {
+					"Visible": false,
+					"Required": false,
+					"Enable": false
+				},
+				"CustomerDays": {
+					"Visible": false,
+					"Required": false,
+					"Enable": false
+				},
+				"CustomerHours": {
+					"Visible": false,
+					"Required": false,
+					"Enable": false
+				},
+				"RequestedDelivery": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Description": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				},
+				"SupplyChain": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"CXRFPSol": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ActvtStatus": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ExistingClient": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"Security": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"EaEngagementStatus": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ActDetailType": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"SalesLOB": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"BsnsAreaEngd": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"Method": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"VirtualStudio": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"BoardRoomNumber": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"StrategicAreaType": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"AdditionalSolutions": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"CrossTopic": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Scope": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"VxMainSolution": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				},
+				"IncrPipeline": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				},
+				"BPSMEAlign": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"CustomerEngLevel": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Status": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Phases": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ContentKM": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				},
+				"EARegion": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"SCPAccount": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"PotentialCloseDate": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"TargetValue": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"ProjectType": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"HostType": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"UseCase": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"DelTeam": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Vendor": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"TAOption": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"TAEngType": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ActvtName": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"CountryName": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"NmbrOfAttnds": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Impact": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"PrefDC": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"UserNumber": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"CurrentSize": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"RecommendedSize": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"CompressionFactor": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"HSCDesc": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Audience": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ActLead": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"ActSupport": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ActManager": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"AccountExecutive": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				},
+				"AccountOwner": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				},
+				"Executivesponsor": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"ResourceManager": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"PCSM": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"ActTeam": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				},
+				"EACSD": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"EAGAD": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"EAIAE": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"EADIR": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"EAIVE": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"RequestorManager": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"HSCTeam": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"DemoSurveyRecpt": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ActivityRisk": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				},
+				"CompleteActions": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"Deliverables": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"Comments": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"EaFileAttchmnt": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				}
+			}
+
+		}, {
+			"LayoutId": "00020",
+			"Fields": {
+				"EventTitle": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Account": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"OpportunityNumber": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				},
+				"AdditionalOpp": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"StartDate": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"EndDate": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"HSCRegion": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"DryRunDate": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"DiscoveryCompleted": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"TopDeal": {
+					"Visible": false,
+					"Required": false,
+					"Enable": false
+				},
+				"Scripted": {
+					"Visible": false,
+					"Required": false,
+					"Enable": false
+				},
+				"CustomerDays": {
+					"Visible": false,
+					"Required": false,
+					"Enable": false
+				},
+				"CustomerHours": {
+					"Visible": false,
+					"Required": false,
+					"Enable": false
+				},
+				"RequestedDelivery": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Description": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				},
+				"SupplyChain": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"CXRFPSol": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ActvtStatus": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ExistingClient": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"Security": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"EaEngagementStatus": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ActDetailType": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"SalesLOB": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"BsnsAreaEngd": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Method": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"VirtualStudio": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"BoardRoomNumber": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"StrategicAreaType": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"AdditionalSolutions": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"CrossTopic": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Scope": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"VxMainSolution": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"IncrPipeline": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"BPSMEAlign": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"CustomerEngLevel": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"Status": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"Phases": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ContentKM": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"EARegion": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"SCPAccount": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"PotentialCloseDate": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"TargetValue": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"ProjectType": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"HostType": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"UseCase": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"DelTeam": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Vendor": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"TAOption": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"TAEngType": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ActvtName": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"CountryName": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"NmbrOfAttnds": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Impact": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"PrefDC": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"UserNumber": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"CurrentSize": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"RecommendedSize": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"CompressionFactor": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"HSCDesc": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Audience": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ActLead": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"ActSupport": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ActManager": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"AccountExecutive": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				},
+				"AccountOwner": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				},
+				"Executivesponsor": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"ResourceManager": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"PCSM": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"ActTeam": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				},
+				"EACSD": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"EAGAD": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"EAIAE": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"EADIR": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"EAIVE": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"RequestorManager": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"HSCTeam": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"DemoSurveyRecpt": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ActivityRisk": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				},
+				"CompleteActions": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				},
+				"Deliverables": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"Comments": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"EaFileAttchmnt": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				}
+
+			}
+
+		}, {
+			"LayoutId": "00021",
+			"Fields": {
+				"EventTitle": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Account": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"OpportunityNumber": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				},
+				"AdditionalOpp": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"StartDate": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"EndDate": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"HSCRegion": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"DryRunDate": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"DiscoveryCompleted": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"TopDeal": {
+					"Visible": false,
+					"Required": false,
+					"Enable": false
+				},
+				"Scripted": {
+					"Visible": false,
+					"Required": false,
+					"Enable": false
+				},
+				"CustomerDays": {
+					"Visible": false,
+					"Required": false,
+					"Enable": false
+				},
+				"CustomerHours": {
+					"Visible": false,
+					"Required": false,
+					"Enable": false
+				},
+				"RequestedDelivery": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Description": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				},
+				"SupplyChain": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"CXRFPSol": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ActvtStatus": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ExistingClient": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"Security": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"EaEngagementStatus": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ActDetailType": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"SalesLOB": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"BsnsAreaEngd": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"Method": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"VirtualStudio": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"BoardRoomNumber": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"StrategicAreaType": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"AdditionalSolutions": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"CrossTopic": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Scope": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"VxMainSolution": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"IncrPipeline": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"BPSMEAlign": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"CustomerEngLevel": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"Status": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"Phases": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"ContentKM": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				},
+				"EARegion": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"SCPAccount": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"PotentialCloseDate": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"TargetValue": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"ProjectType": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"HostType": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"UseCase": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"DelTeam": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Vendor": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"TAOption": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"TAEngType": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ActvtName": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"CountryName": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"NmbrOfAttnds": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Impact": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"PrefDC": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"UserNumber": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"CurrentSize": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"RecommendedSize": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"CompressionFactor": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"HSCDesc": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Audience": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ActLead": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"ActSupport": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ActManager": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"AccountExecutive": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				},
+				"AccountOwner": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				},
+				"Executivesponsor": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"ResourceManager": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"PCSM": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"ActTeam": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				},
+				"EACSD": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"EAGAD": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"EAIAE": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"EADIR": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"EAIVE": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"RequestorManager": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"HSCTeam": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"DemoSurveyRecpt": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ActivityRisk": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				},
+				"CompleteActions": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"Deliverables": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"Comments": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"EaFileAttchmnt": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				}
+
+			}
+
+		}, {
+			"LayoutId": "00022",
+			"Fields": {
+				"EventTitle": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"Account": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"OpportunityNumber": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"AdditionalOpp": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"StartDate": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"EndDate": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"HSCRegion": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"DryRunDate": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"DiscoveryCompleted": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"TopDeal": {
+					"Visible": false,
+					"Required": false,
+					"Enable": false
+				},
+				"Scripted": {
+					"Visible": false,
+					"Required": false,
+					"Enable": false
+				},
+				"CustomerDays": {
+					"Visible": false,
+					"Required": false,
+					"Enable": false
+				},
+				"CustomerHours": {
+					"Visible": false,
+					"Required": false,
+					"Enable": false
+				},
+				"RequestedDelivery": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Description": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				},
+				"SupplyChain": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"CXRFPSol": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ActvtStatus": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ExistingClient": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"Security": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"EaEngagementStatus": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+
+				"ActDetailType": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"SalesLOB": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"BsnsAreaEngd": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Method": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"VirtualStudio": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"BoardRoomNumber": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"StrategicAreaType": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"AdditionalSolutions": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"CrossTopic": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Scope": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"VxMainSolution": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"IncrPipeline": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"BPSMEAlign": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"CustomerEngLevel": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Status": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Phases": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"ContentKM": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"EARegion": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"SCPAccount": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"PotentialCloseDate": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"TargetValue": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ProjectType": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"HostType": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"UseCase": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"DelTeam": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Vendor": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"TAOption": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"TAEngType": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"ActvtName": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"CountryName": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"NmbrOfAttnds": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"Impact": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"PrefDC": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"UserNumber": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"CurrentSize": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"RecommendedSize": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"CompressionFactor": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"HSCDesc": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Audience": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+
+				"ActLead": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"ActSupport": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ActManager": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"AccountExecutive": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"AccountOwner": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"Executivesponsor": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"ResourceManager": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"PCSM": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"ActTeam": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"EACSD": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"EAGAD": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"EAIAE": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"EADIR": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"EAIVE": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"RequestorManager": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"HSCTeam": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"DemoSurveyRecpt": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ActivityRisk": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"CompleteActions": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"Deliverables": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"Comments": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"EaFileAttchmnt": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				}
+			}
+
+		}, {
+
+			"LayoutId": "00023",
+			"Fields": {
+				"EventTitle": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"Account": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"OpportunityNumber": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"AdditionalOpp": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"StartDate": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"EndDate": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"HSCRegion": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"DryRunDate": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"DiscoveryCompleted": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"TopDeal": {
+					"Visible": false,
+					"Required": false,
+					"Enable": false
+				},
+				"Scripted": {
+					"Visible": false,
+					"Required": false,
+					"Enable": false
+				},
+				"CustomerDays": {
+					"Visible": false,
+					"Required": false,
+					"Enable": false
+				},
+				"CustomerHours": {
+					"Visible": false,
+					"Required": false,
+					"Enable": false
+				},
+				"RequestedDelivery": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Description": {
+					"Visible": true,
+					"Required": false,
+					"Enable": true
+				},
+				"SupplyChain": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"CXRFPSol": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ActvtStatus": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ExistingClient": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"Security": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"EaEngagementStatus": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+
+				"ActDetailType": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"SalesLOB": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"BsnsAreaEngd": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Method": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"VirtualStudio": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"BoardRoomNumber": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"StrategicAreaType": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"AdditionalSolutions": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"CrossTopic": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Scope": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"VxMainSolution": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"IncrPipeline": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"BPSMEAlign": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"CustomerEngLevel": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Status": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Phases": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ContentKM": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"EARegion": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"SCPAccount": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"PotentialCloseDate": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"TargetValue": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ProjectType": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"HostType": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"UseCase": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"DelTeam": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Vendor": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"TAOption": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"TAEngType": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ActvtName": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"CountryName": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"NmbrOfAttnds": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Impact": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"PrefDC": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"UserNumber": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"CurrentSize": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"RecommendedSize": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"CompressionFactor": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"HSCDesc": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Audience": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+
+				"ActLead": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"ActSupport": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ActManager": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"AccountExecutive": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"AccountOwner": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"Executivesponsor": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ResourceManager": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"PCSM": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"ActTeam": {
+					"Visible": true,
+					"Required": true,
+					"Enable": true
+				},
+				"EACSD": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"EAGAD": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"EAIAE": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"EADIR": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"EAIVE": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"RequestorManager": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"HSCTeam": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"DemoSurveyRecpt": {
+					"Visible": false,
+					"Required": true,
+					"Enable": true
+				},
+				"ActivityRisk": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"CompleteActions": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"Deliverables": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"Comments": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				},
+				"EaFileAttchmnt": {
+					"Visible": false,
+					"Required": false,
+					"Enable": true
+				}
+			}
+
+		}
+
+	]
+
+}

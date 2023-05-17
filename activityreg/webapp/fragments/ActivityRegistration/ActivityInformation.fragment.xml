@@ -23,7 +23,7 @@
     </HBox>
     <!--account close-->
     <!--opportunityNumber-->
-    <Label text="Opportunity No" id="idOpportunityNoActReg" visible="true"></Label>
+    <Label text="Opportunity No" id="idOpportunityNoActReg" visible="true" required="true"></Label>
     <MultiInput visible="true" valueHelpOnly="false" valueHelpRequest="openAdditionalOpptDialog" id="OpptMultiInputActReg" tokens="{default>/to_AAddOpp}" placeholder="Select/Enter Opportunity" busy="{path:'default>/to_AAddOpp',formatter:'.formatter.setFieldBusyIndicator'}">
         <tokens>
             <Token text="{default>OpportunityNo}" key="{default>OpportunityNo}" delete="handleAdditionalOppChange"></Token>

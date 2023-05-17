@@ -2,14 +2,15 @@
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
     xmlns:form="sap.ui.layout.form"
     xmlns:core="sap.ui.core"
-    xmlns="sap.m">
+    xmlns="sap.m"
+    xmlns:demo="com.myorg.melodytools">
     <Page id="cxRfpPage" title="CX RFP">
         <headerContent>
-            <ComboBox selectedKey="{mCommon>/navigationSelectedKey}" items="{
+            <ComboBox id="_IDGenComboBox1" selectedKey="{mCommon>/navigationSelectedKey}" items="{
 					path: 'mCommon>/aNavigation',
 					sorter: { path: 'name' }
 				}" change="onNavigationChangeHandler">
-                <core:Item key="{mCommon>key}" text="{mCommon>name}" /> 
+                <core:Item id="_IDGenItem1" key="{mCommon>key}" text="{mCommon>name}" /> 
             </ComboBox>
         </headerContent>
         <content>
@@ -37,7 +38,7 @@
                         <VBox id="idVBoxSegmentButton">
                             <SegmentedButton class="segBtn" id="idRABtn" items="{masterDataModel>/Yc_Mac_M_Risk_Asses}" selectionChange="handleRisk" width="100%" selectedKey="{default>/RiskAssessId}" selectedButton="none" busy="{path:'masterDataModel>/Yc_Mac_M_Risk_Asses',formatter:'.formatter.setFieldBusyIndicator'}" enabled="{= ${default>/Authorized} !=='' || (${masterDataModel>/FormLayoutID} === '00001' &amp;&amp; ${appProperties>/DemoEditAccess} === 'X')}">
                                 <items>
-                                    <SegmentedButtonItem text="{masterDataModel>description}" key="{masterDataModel>ra_id}" enabled="{= ${default>/Authorized} !=='' || (${masterDataModel>/FormLayoutID} === '00001' &amp;&amp; ${appProperties>/DemoEditAccess} === 'X')}"></SegmentedButtonItem>
+                                    <SegmentedButtonItem id="_IDGenSegmentedButtonItem1" text="{masterDataModel>description}" key="{masterDataModel>ra_id}" enabled="{= ${default>/Authorized} !=='' || (${masterDataModel>/FormLayoutID} === '00001' &amp;&amp; ${appProperties>/DemoEditAccess} === 'X')}"></SegmentedButtonItem>
                                 </items>
                             </SegmentedButton>
                             <Text id="idTextRiskWarning" text="{i18n>xtit.riskassesWarning}" class="riskAssesText"></Text>
@@ -58,7 +59,7 @@
                     </HBox>
                 </form:content>
             </form:SimpleForm>
-            <VBox>
+            <VBox id="_IDGenVBox1">
                 <!-- <VBox id="idVBox" visible="true">
                 <core:ComponentContainer id="pcFileUploadComponent" name="com.presalescentral.pcfileattachment" propagateModel="true" componentCreated="onUploadComponentLoaded"></core:ComponentContainer>
                 </VBox> -->
@@ -67,9 +68,10 @@
                         <core:Fragment fragmentName="com.presalescentral.activityform.view.ActivityFormFragments.completeActionsTable" type="XML"/>
                     </content>
                 </Panel> -->
-                <Panel headerText="{i18n>xtit.demoEnvironmentTitle}" id="demoData" class="demoEnvironment" visible="false">
+                <Panel headerText="Custom Library" id="demoData" class="demoEnvironment" visible="true">
                     <content>
-                        <core:Fragment fragmentName="com.test.activityreg.fragments.CXRFP.DemoEnvironment" type="XML"/>
+                    <demo:Example id="_IDGenExample1" text="Loading from Custom library"/>
+                        <!-- <core:Fragment fragmentName="com.test.activityreg.fragments.CXRFP.DemoEnvironment" type="XML"/> -->
                     </content>
                 </Panel>
                 <Panel id="idComments" visible="false">
@@ -107,8 +109,8 @@
                             </HBox>
                             <FeedInput post="onCommentPost" id="actFormCommentInput" class="sapUiSmallMarginTopBottom" enabled="{= (${default>/Authorized} !=='' || ${user>/CXRFP_User} ==='X')}" iconDensityAware="false"/>
                             <List showSeparators="Inner" items="{path: 'default>/to_AComments',sorter:{path:'CreationDate',descending:'true'}}" id="idCommentList">
-                                <FeedListItem sender="{default>CreateUserName}" icon="{path:'default>CreatedBy',formatter:'.formatter.setAvatarSrc'}" senderPress="onSenderPress" iconPress="onIconPress" iconDensityAware="false" timestamp="{path:'default>CreationDate',type: 'sap.ui.model.type.DateTime'}" text="{default>CommentDesc}" convertLinksToAnchorTags="All" actions="{default>editActions}">
-                                    <FeedListItemAction text="{default>text}" icon="{default>iconSrc}" press="onActionComment"></FeedListItemAction>
+                                <FeedListItem id="_IDGenFeedListItem1" sender="{default>CreateUserName}" icon="{path:'default>CreatedBy',formatter:'.formatter.setAvatarSrc'}" senderPress="onSenderPress" iconPress="onIconPress" iconDensityAware="false" timestamp="{path:'default>CreationDate',type: 'sap.ui.model.type.DateTime'}" text="{default>CommentDesc}" convertLinksToAnchorTags="All" actions="{default>editActions}">
+                                    <FeedListItemAction id="_IDGenFeedListItemAction1" text="{default>text}" icon="{default>iconSrc}" press="onActionComment"></FeedListItemAction>
                                 </FeedListItem>
                             </List>
                         </VBox>
