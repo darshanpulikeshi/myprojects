@@ -7,6 +7,7 @@ sap.ui.define(
       "com.test.activityreg.controller.CXRFP",
       {
         onInit: function () {
+          //added library
           let oRouter = sap.ui.core.UIComponent.getRouterFor(this);
           oRouter
             .getRoute("CXRFP")
